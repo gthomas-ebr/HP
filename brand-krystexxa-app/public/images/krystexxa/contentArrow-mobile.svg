@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="301" height="409" viewBox="0 0 301 409">
+    <defs>
+        <radialGradient id="a" cy="-2.302%" r="340.826%" fx="50%" fy="-2.302%" gradientTransform="matrix(0 .56231 -1 0 .477 -.304)">
+            <stop offset="0%" stop-color="#EEE"/>
+            <stop offset="100%" stop-color="#4A4A4A" stop-opacity=".8"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M73 0h185v329H73z" transform="translate(-15)"/>
+        <path fill="#979797" fill-opacity=".8" d="M151 409l116-81H35z"/>
+        <path fill="#7C2468" d="M0 131h301v21H0z"/>
+        <text fill="#D61A7D" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".209" transform="translate(-15)">
+            <tspan x="104.766" y="46">URIC ACID CRYSTALS</tspan> <tspan x="122.688" y="66" font-size="18" letter-spacing=".314">BUILD UP</tspan>
+        </text>
+        <text fill="#FFF" font-family="Lato-Italic, Lato" font-size="15" font-style="italic" letter-spacing=".261" transform="translate(-15)">
+            <tspan x="110.799" y="145">MINIMUM GOAL</tspan>
+        </text>
+        <text font-family="Lato-Regular, Lato" font-size="12" letter-spacing="-.7" transform="translate(-15 22)">
+            <tspan x="19.362" y="12" fill="#354154">10 mg/dL</tspan> <tspan x="22.492" y="38" fill="#354154">9 mg/dL</tspan> <tspan x="22.492" y="64" fill="#354154">8 mg/dL</tspan> <tspan x="22.492" y="90" fill="#354154">7 mg/dL</tspan> <tspan x="22.492" y="116" fill="#FFF">6 mg/dL</tspan>  <tspan x="22.492" y="142" fill="#354154">5 mg/dL</tspan> <tspan x="22.492" y="168" fill="#354154">4 mg/dL</tspan> <tspan x="22.492" y="194" fill="#354154">3 mg/dL</tspan> <tspan x="22.492" y="220" fill="#354154">2 mg/dL</tspan> <tspan x="22.492" y="246" fill="#354154">1 mg/dL</tspan> <tspan x="22.492" y="272" fill="#354154">0 mg/dL</tspan>
+        </text>
+        <path stroke="#979797" stroke-linecap="square" d="M58 36h-6.612M58 62h-6.612M58 87.5h-6.612M58 114h-6.612M58 167h-6.612M58 193h-6.612M58 219h-6.612M58 245h-6.612M58 271h-6.612M58 297h-6.612"/>
+        <text fill="#354154" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".209" transform="translate(-15)">
+            <tspan x="85" y="91">Increased risk of future flares </tspan> <tspan x="118.516" y="105">and joint damage</tspan>
+        </text>
+        <text fill="#354154" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".209" transform="translate(-15)">
+            <tspan x="82.108" y="248">Decreased risk of future flares </tspan> <tspan x="118.107" y="262">and joint damage</tspan>
+        </text>
+        <text fill="#D61A7D" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".209" transform="translate(-15)">
+            <tspan x="126.481" y="204">GET INTO THE</tspan> <tspan x="96" y="224" font-size="18" letter-spacing=".314">DISSOLVE ZONE</tspan>
+        </text>
+    </g>
+</svg>

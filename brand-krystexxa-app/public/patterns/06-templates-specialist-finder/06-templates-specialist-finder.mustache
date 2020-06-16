@@ -1,0 +1,133 @@
+{{#commonHeaderFooterData}}
+  <section class="hz-header-wrap">
+    <div class="gout-box grey-bg visible-mobile">
+      <p>A Gout Nurse Advocate can answer<br> your questions. <a href="tel:0">Call 833-4MY-GOUT</a></p>
+    </div>
+    <div class="container-full">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Header starts -->
+          {{#header}}
+            <div class="header">
+              <div class="wrapper">
+                <div class="top-container">
+                  <a href="#" class="icon-home visible-mobile">
+                    <img src="../../images/krystexxa/icon-home.svg" alt="">
+                  </a>
+                  <div class="logo-wrapper">
+                    <div class="logo">
+                      <a href="#" class="logo-container">
+                        {{>starterkit-atoms-logo}}
+                      </a>
+                    </div>
+                  </div>
+                  <div class="top-nav-links visible-desktop">
+                    {{>starterkit-molecules-top-navigation}}
+                  </div>
+                  <div class="gout-box grey-bg visible-desktop">
+                    <p>A Gout Nurse Advocate can <br>answer your questions.<br> <a href="tel:0">Call 833-469-4688</a></p>
+                  </div>
+                </div>
+                <div class="bottom-container">
+                  <div class="nav-wrapper">
+                    <div class="hamburger visible-mobile">
+                      <div class="menuIcon">
+                      </div>
+                    </div>
+                    <div class="menu-wrapper">
+                      <div class="nav-bar">
+                        <a href="#" class="active icon-home visible-desktop">
+                          <img src="../../images/krystexxa/icon-home.svg" alt="">
+                        </a>
+                        {{>starterkit-molecules-main-navigation}}
+                        <div class="top-nav-links visible-mobile">
+                          {{>starterkit-molecules-top-navigation}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col search">
+                      <span class="search-toggle"></span>
+                      <div class="search-inner">
+                        <div class="search-field">
+                          {{>starterkit-molecules-header-search}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/header}}
+          <!-- Header ends -->
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}
+
+<br><br><br><br><br><br><br>
+
+<!-- Zipcode box -->
+<section class="bg-gradient padding-large">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="FAS_zip" class="zipcode-callout">
+          {{>starterkit-organisms-zipcode-box}}
+        </div>
+        <p id="promo-message">When you call, please mention code <strong>GOUTHELP</strong> to receive priority scheduling.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="results" class="specialist-results">
+          <div id="list" class="list">
+            <table id="doctors" class="display"></table>
+          </div>
+          <div id="map-container" class="map-container">
+            <div id="map" class="map"></div>
+          </div>
+          <div class="loading-spinner"></div>
+        </div>
+        <form id="fakeForm" runat="server" action="/Platform/Process" target="_blank">
+          <input type="hidden" name="__componentInstanceName" value="" />
+          <input type="hidden" name="FIRST_NAME" value="" />
+          <input type="hidden" name="LAST_NAME" value="" />
+          <input type="hidden" name="ADDRESS_LINE1" value="" />
+          <input type="hidden" name="ADDRESS_LINE2" value="" />
+          <input type="hidden" name="CITY" value="" />
+          <input type="hidden" name="STATE" value="" />
+          <input type="hidden" name="ZIP" value="" />
+          <input type="hidden" name="PRIMARY_DEGREE" value="" />
+          <input type="hidden" name="AMA_SPECIALITY" value="" />
+          <input type="hidden" name="PHONE" value="" />
+          <input type="hidden" name="Latitude" value="" />
+          <input type="hidden" name="Longitude" value="" />
+          <input type="hidden" name="Formatted_Address" value="" />
+          <input type="hidden" name="Distance" value="" />
+          <input type="hidden" name="ID" value="" />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br><br><br><br><br>
+<!-- Footer -->
+{{#commonHeaderFooterData}}
+  <section class="hz-footer-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{>starterkit-organisms-footer-generic}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}

@@ -1,0 +1,373 @@
+/*readtext*/
+#rsbtn_scrollcontrols {
+  background: #A5CF4F !important;
+  padding: 0 !important;
+  height: 42px !important;
+  font-family: "TiresiasInfofont" !important;
+  border: 1px solid #000000 !important;
+}
+
+#rsbtn_scrollcontrols i {
+  font-size: 18px !important;
+  margin: 8px !important;
+}
+
+#rslightbox_contentcontainer.has-buttons #rslightbox_content {
+  font-family: "TiresiasInfofont" !important;
+}
+
+.rsbtn .rsbtn_exp .rsbtn_exp_inner button {
+  background: #A5CF4F !important;
+  color: #000000 !important;
+}
+
+.rsbtn .rsbtn_play .rsbtn_left .rsbtn_text span,
+.rs_addtools .rsbtn_play .rsbtn_left .rsbtn_text span {
+  font-size: 16px !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  font-family: "TiresiasInfofont" !important;
+  margin-right: 13px !important;
+  margin-left: 11px !important;
+  line-height: 40px !important;
+}
+
+.rsbtn .rsbtn_play .rsbtn_left,
+.rs_addtools .rsbtn_play .rsbtn_left {
+  margin-left: 40px !important;
+}
+
+.rsbtn .rsbtn_toolpanel .rsbtn_tools,
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools {
+  background: #A5CF4F !important;
+}
+
+.rsbtn .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:hover,
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:hover,
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:active,
+.rsbtn .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:focus,
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:focus,
+.rsbtn .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool:active {
+  background: #005133 !important;
+  color: #ffffff !important;
+}
+
+.rsbtn_tools a,
+#rslightbox_contentcontainer a {
+  background-color: inherit;
+}
+
+.rsbtn .rsbtn_play,
+.rs_addtools .rsbtn_play {
+  background: #A5CF4F !important;
+  height: 38px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 0px !important;
+}
+
+.rsbtn .rsbtn_play .rsbtn_right,
+.rs_addtools .rsbtn_play .rsbtn_right {
+  color: #000000 !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_playpause:hover,
+#rsbtn_scrollcontrols button.rsbtn_scroll_playpause:focus,
+#rsbtn_scrollcontrols button.rsbtn_scroll_playpause:active {
+  color: #ffffff !important;
+  background: #005133 !important;
+}
+
+/*low-fixed-read*/
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll {
+  background: #A5CF4F !important;
+  border: none !important;
+  color: #000000 !important;
+  font-size: 13px !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll span {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:hover,
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:focus,
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:active {
+  background: #005133 !important;
+  color: #ffffff !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:hover span,
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:focus span,
+#rsbtn_scrollcontrols button.rsbtn_scroll_togglescroll:active span {
+  color: #ffffff !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_playpause {
+  color: #000000 !important;
+  background: #A5CF4F !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  height: 40px !important;
+  width: auto !important;
+  margin-right: 0 !important;
+  // border: 1px solid #000000 !important;
+  border-left: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_close {
+  color: #000000 !important;
+  background: #A5CF4F !important;
+  top: 0 !important;
+  border: none !important;
+  margin-left: 0 !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_close:hover,
+#rsbtn_scrollcontrols button.rsbtn_scroll_close:focus,
+#rsbtn_scrollcontrols button.rsbtn_scroll_close:active {
+  color: #ffffff !important;
+  background: #005133 !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_playpause i {
+  top: 1px !important;
+}
+
+#rsbtn_scrollcontrols i.rsicn-rslogo-2019 {
+  top: 4px !important;
+  position: relative;
+}
+
+#rsbtn_scrollcontrols button {
+  height: 40px !important;
+  width: auto !important;
+}
+
+#rsbtn_scrollcontrols button.rsbtn_scroll_close i {
+  top: 1px !important;
+}
+
+#rsbtn_scrollcontrols button:hover,
+#rsbtn_scrollcontrols button:focus,
+#rsbtn_scrollcontrols button:active {
+  background: #A5CF4F !important;
+}
+
+/*low-fixed-read*/
+.rsbtn .rsbtn_tooltoggle,
+.rs_addtools .rsbtn_tooltoggle {
+  background: #A5CF4F !important;
+  top: 0px !important;
+  border-top: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+  border-bottom: 0px !important;
+  width: 30px !important;
+  height: 39px !important;
+  font-size: 20px !important;
+  box-shadow: none !important;
+}
+
+.rsbtn.zoom-draghandle .rsbtn_draghandle,
+.rs_addtools.zoom-draghandle .rsbtn_draghandle {
+  background: #A5CF4F !important;
+}
+
+.rspopup {
+  background: #A5CF4F !important;
+}
+
+.rsbtn .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_powered .rsbtn_btnlabel {
+  font-size: 0.8em !important;
+}
+
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools,
+.rsbtn .rsbtn_toolpanel .rsbtn_tools {
+  position: relative !important;
+}
+
+.rsbtn .rsbtn_play:hover,
+.rs_addtools .rsbtn_play:hover,
+.rsbtn .rsbtn_play:focus,
+.rs_addtools .rsbtn_play:focus,
+.rsbtn .rsbtn_play:active,
+.rs_addtools .rsbtn_play:active {
+  background: #005133 !important;
+}
+
+
+.rsbtn .rsbtn_tooltoggle:hover,
+.rs_addtools .rsbtn_tooltoggle:hover,
+.rsbtn .rsbtn_tooltoggle:focus,
+.rs_addtools .rsbtn_tooltoggle:focus,
+.rsbtn .rsbtn_tooltoggle:active,
+.rs_addtools .rsbtn_tooltoggle:active {
+  background: #005133 !important;
+  color: #ffffff !important;
+  border: 1px solid #000 !important;
+  border-bottom: 0px !important;
+  border-left: 0px !important;
+}
+
+.rspopup .rspopup_btn:hover,
+.rspopup .rspopup_btn:focus,
+.rspopup .rspopup_btn:active {
+  background: #005133 !important;
+}
+
+.rspopup.rsresume::before {
+  color: #000000 !important;
+}
+
+.rspopup.rsresume:hover,
+.rspopup.rsresume:focus,
+.rspopup.rsresume:active {
+  background: #005133 !important;
+}
+
+.rsbtn .rsbtn_play:hover .rsbtn_left .rsbtn_text::before,
+.rs_addtools .rsbtn_play:hover .rsbtn_left .rsbtn_text::before,
+.rsbtn .rsbtn_play:focus .rsbtn_left .rsbtn_text::before,
+.rs_addtools .rsbtn_play:focus .rsbtn_left .rsbtn_text::before {
+  color: #ffffff !important;
+}
+
+.rsbtn .rsbtn_play:hover .rsbtn_text span,
+.rs_addtools .rsbtn_play:hover .rsbtn_text span,
+.rsbtn .rsbtn_play:focus .rsbtn_text span,
+.rs_addtools .rsbtn_play:focus .rsbtn_text span,
+.rsbtn .rsbtn_play:active .rsbtn_text span,
+.rs_addtools .rsbtn_play:active .rsbtn_text span {
+  color: #ffffff !important;
+}
+
+.rsbtn .rsbtn_play:hover .rsbtn_right::before,
+.rs_addtools .rsbtn_play:hover .rsbtn_right::before,
+.rsbtn .rsbtn_play:focus .rsbtn_right::before,
+.rs_addtools .rsbtn_play:focus .rsbtn_right::before,
+.rsbtn .rsbtn_play:active .rsbtn_right::before,
+.rs_addtools .rsbtn_play:active .rsbtn_right::before {
+  color: #ffffff !important;
+}
+
+.rsbtn .rsbtn_play:hover .rsbtn_text,
+.rs_addtools .rsbtn_play:hover .rsbtn_text,
+.rsbtn .rsbtn_play:focus .rsbtn_text,
+.rs_addtools .rsbtn_play:focus,
+.rsbtn .rsbtn_play:active .rsbtn_text,
+.rs_addtools .rsbtn_play:active .rsbtn_text {
+  color: #ffffff !important;
+}
+
+.rsbtn .rsbtn_exp .rsbtn_exp_inner button:hover,
+.rsbtn .rsbtn_exp .rsbtn_exp_inner button:focus,
+.rsbtn .rsbtn_exp .rsbtn_exp_inner button:active {
+  background: #005133 !important;
+  color: #ffffff !important;
+}
+
+span.rsbtn_right.rsimg.rsplay.rspart {
+  padding: 6px 0 0 14px !important;
+  border-left: 1px solid #000000 !important;
+  margin: 0 11px 0 7px !important;
+}
+
+.rsbtn .rsbtn_play .rsbtn_left .rsbtn_text::before,
+.rs_addtools .rsbtn_play .rsbtn_left .rsbtn_text::before {
+  top: 7px !important;
+  color: #000000;
+  font-size: 18px !important;
+}
+
+.rsbtn .rsbtn_exp {
+  height: 38px !important;
+}
+
+.rs_addtools .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool.active::before,
+.rsbtn .rsbtn_toolpanel .rsbtn_tools .rsbtn_tools_inner .rsbtn_toolcontainer .rsbtn_toollist li .rsbtn_tool.active::before {
+  display: none;
+}
+
+.rsbtn.zoom-tooltoggler .rsbtn_tooltoggle,
+.rs_addtools.zoom-tooltoggler .rsbn_tooltoggle {
+  left: 0px !important;
+  line-height: 20px !important;
+}
+
+
+.rsbtn .rsbtn_play:hover span.rsbtn_right.rsimg.rsplay.rspart,
+.rsbtn .rsbtn_play:focus span.rsbtn_right.rsimg.rsplay.rspart,
+.rsbtn .rsbtn_play:active span.rsbtn_right.rsimg.rsplay.rspart {
+  border-left: 1px solid #ffffff !important;
+}
+
+
+@media (max-width: $mobile) {
+  .rsbtn .rs-player-loadindicator {
+    left: 0 !important;
+  }
+}
+
+.rsmpl-tool button {
+  background: #A5CF4F !important;
+  color: #000000 !important
+}
+
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-playpause .rsicn {
+  color: #000000 !important;
+}
+
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-stop .rsicn {
+  color: #000000 !important;
+}
+
+
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-playpause .rsicn:hover,
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-playpause .rsicn:focus,
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-playpause .rsicn:active {
+  color: #ffffff !important;
+}
+
+
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-stop .rsicn:hover,
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-stop .rsicn:focus,
+#rsmpl_container .rsmpl-tools .rsmpl-tool .rsmpl-stop .rsicn:active {
+  color: #ffffff !important;
+}
+
+
+.rsmpl-tool button:hover,
+.rsmpl-tool button:focus,
+.rsmpl-tool button:active {
+  background: #005133 !important;
+  color: #ffffff !important;
+}
+
+
+.rsmpl-tool button:hover .rsicn,
+.rsmpl-tool button:focus .rsicn,
+.rsmpl-tool button:active .rsicn {
+
+  color: #ffffff !important;
+}
+
+
+button.rsbtn_tool.active {
+  color: white !important;
+  background-color: #005533 !important;
+}
+
+#rsmpl_container .rsmpl-tools .rsmpl-tool button:focus {
+  background: #005133 !important;
+
+}
+
+@media (max-width: $mobile) {
+  .rsbtn.rsexpanded .rsbtn_exp {
+    display: inline-block !important;
+  }
+}
+
+
+/*readtext-end*/

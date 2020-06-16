@@ -1,0 +1,36 @@
+/*Tieresis fonts */
+@font-face {
+  font-family: "TiresiasInfofont";
+  src: url("../../fonts/tepezza/TiresiasInfofont/font.eot");
+  src: url("../../fonts/tepezza/TiresiasInfofont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasInfofont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasInfofont/font.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "TiresiasInfofontZ";
+  src: url("../../fonts/tepezza/TiresiasInfofontZ/font.eot");
+  src: url("../../fonts/tepezza/TiresiasInfofontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasInfofontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasInfofontZ/font.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "TiresiasPCfont";
+  src: url("../../fonts/tepezza/TiresiasPCfont/font.eot");
+  src: url("../../fonts/tepezza/TiresiasPCfont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasPCfont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasPCfont/font.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "TiresiasPCfontZ";
+  src: url("../../fonts/tepezza/TiresiasPCfontZ/font.eot");
+  src: url("../../fonts/tepezza/TiresiasPCfontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasPCfontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasPCfontZ/font.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "TiresiasSignfont";
+  src: url("../../fonts/tepezza/TiresiasSignfont/font.eot");
+  src: url("../../fonts/tepezza/TiresiasSignfont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasSignfont/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasSignfont/font.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "TiresiasSignfontZ";
+  src: url("../../fonts/tepezza/TiresiasSignfontZ/font.eot");
+  src: url("../../fonts/tepezza/TiresiasSignfontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasSignfontZ/font.woff") format("woff"), url("../../fonts/tepezza/TiresiasSignfontZ/font.ttf") format("truetype");
+  font-style: normal; }

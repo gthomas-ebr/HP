@@ -1,0 +1,100 @@
+{
+  "textBannerImage":{
+    "banner-padding":"banner-padding",
+    "headingTag": "h1",
+    "headingTxt": "is my gout out of control?",
+    "imageList": {
+      "imgPath": "../../images/krystexxa/q6.svg",
+      "mobImgPath": "../../images/krystexxa/q6.svg",
+      "tabImgPath": "../../images/krystexxa/q6.svg",
+      "imgAlttxt": "alt text"
+    }
+  },
+	"quizWrapper": {
+    "questionNo": "q6",
+	  "radioBtnWrapper": [
+	  	{
+	  		"radioText": "Mild",
+        "answerId": "A"
+	  	},
+	  	{
+	  		"radioText": "Moderate2-4Moderate",
+        "answerId": "B"
+	  	},
+      {
+        "radioText": "Severe",
+        "answerId": "C"
+      },
+      {
+        "radioText": "Excruciating",
+        "answerId": "D"
+      }
+	  ],
+		"headingTag": "h3",
+		"headingTxt": "How painful are your gout flares?",
+    "titleWrapper": {
+      "headingTag": "h2",
+      "headingTxt": "",
+    },
+		"button": {
+			"buttonURL": "#",
+			"buttonClass": "next-btn disabled",
+			"buttonText": "Get your results",
+      "yesUrl": "#",
+      "noUrl": "#"
+		}
+	},
+	"footerGeneric": {
+    "imageList": {
+      "imgLink": "#",
+      "linkClass": "",
+      "imgPath": "../../images/krystexxa/horizon-logo.png",
+      "imgAlttxt": "No Image"
+    },
+    "footLinks": [
+      {
+        "links": {
+          "link": "#",
+          "linkClass": "",
+          "linkType": "",
+          "linkTarget": "",
+          "linkTxt": "Privacy policy"
+        }
+      },
+      {
+        "links": {
+          "link": "#",
+          "linkClass": "",
+          "linkType": "",
+          "linkTarget": "",
+          "linkTxt": "Terms of use"
+        }
+      },
+      {
+        "links": {
+          "link": "#",
+          "linkClass": "",
+          "linkType": "",
+          "linkTarget": "",
+          "linkTxt": "Contact Us"
+        }
+      },
+      {
+        "links": {
+          "link": "#",
+          "linkClass": "",
+          "linkType": "",
+          "linkTarget": "",
+          "linkTxt": "Sitemap"
+        }
+      }
+    ],
+    "footerPara": [
+      {
+        "paragraph": {
+          "paraTxt": "This site is intended for U.S. residents only. ©2019.<br class=\"visible-mobile\"> KRYSTEXXA and the HORIZON logo are trademarks owned by or licensed to<br class=\"visible-mobile\"> Horizon Pharma Rheumatology LLC. <br class=\"visible-desktop\">©2019 Horizon Therapeutics plc<br class=\"visible-mobile\">  &nbsp;&nbsp;P-KRY-01102 10/19"
+        }
+      }
+    ]
+  }
+}

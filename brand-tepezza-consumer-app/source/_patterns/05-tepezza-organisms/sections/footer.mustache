@@ -1,0 +1,26 @@
+{{#tepezzaFooter}}
+<footer class="{{footerWrapperClass}}">
+	<div class="row align-items-center">
+		<div class="col-md-12 link-parent">
+			{{>starterkit-atoms-link-list}}
+		</div>
+		<div class="col-md-3 footer-logo order-md-1">
+			{{>starterkit-atoms-images-link}}
+		</div>
+		<div class="col-md-9">
+			<div class="footer-disclaimer">
+				{{#footerDisclaimer}}
+					{{>starterkit-atoms-paragraph}}
+				{{/footerDisclaimer}}
+			</div>
+			
+			<div class="footer-copyright">
+			{{#footerCopyright}}
+				{{>starterkit-atoms-paragraph}}
+				{{/footerCopyright}}
+			</div>
+		</div>
+	</div>
+</footer>
+
+{{/tepezzaFooter}}

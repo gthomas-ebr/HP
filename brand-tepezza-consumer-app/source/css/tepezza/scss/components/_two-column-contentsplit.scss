@@ -1,0 +1,170 @@
+/*Greebox Styling*/
+#illustrations {
+	padding-bottom: 20px;
+
+	&.bg-green .container {
+		background-color: #005133;
+	}
+
+	.container {
+		padding-top: 10px;
+		padding-bottom: 15px;
+		@media (max-width: 1023px){
+			padding-bottom: 20px;
+		}
+
+		h5 {
+			color: white;
+			text-align: center;
+			background-color: #005133;
+			min-height: 45px;
+			padding-bottom: 15px;
+			padding-left: 10px;
+			padding-right: 10px;
+			@media (max-width: 1100px) and (min-width: 768px){
+				min-height: 78px;
+			}
+		}
+		@media (min-width: 768px) {
+			.col-md-6:first-of-type {
+				padding-right: 10px;
+			}
+			.col-md-6:last-of-type {
+				padding-left: 10px;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			.col-md-6:first-of-type {
+				padding-right: 8px;
+			}
+			.col-md-6:last-of-type {
+				padding-left: 8px;
+			}
+		}
+	}
+
+	.twoColumnContentSplit {
+		background-color: #f5f5f5;
+		padding: 0px;
+		@media (min-width: 768px){
+			height: 100%;
+		}
+	}
+}
+
+.twoColumnContentSplit {
+	padding: 0;
+
+	@media (max-width: $mobile) {
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+
+	img {
+		width: 100%;
+		max-width: 450px;
+		margin-top: 0;
+	}
+
+	p {
+		font-size: 28px;
+		line-height: 45px;
+		margin: 54px 0 64px;
+		padding-left: 35px;
+    padding-right: 35px;
+		@media (min-width: 1024px){
+			text-align: center;
+		}
+		strong {
+			display: block;
+			margin-top: 12px;
+		}
+		@media (max-width: 767px){
+			padding-left: 20px;
+	    padding-right: 20px;
+		}
+	}
+
+	h4 {
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin-top: 30px;
+		padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 10px;
+    @media (max-width: 1023px){
+    	padding-right: 20px;
+    }
+    @media (max-width: 767px){
+    	margin-top: 32px;
+    	display: inline-block;
+    }
+	}
+
+	&.col1 {
+		margin: 0;
+
+		>p {
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				right: -15px;
+				top: 0;
+				background-color: #000;
+
+				@media (max-width: $mobile) {
+					content: none;
+				}
+			}
+		}
+	}
+
+	&.col2 {
+		margin: 0;
+	}
+
+	@media (max-width: $mobile) {
+		h5 {
+			font-size: 22px;
+			margin-bottom: 30px;
+		}
+		&.col2 {
+			h5{
+				padding-top: 10px;
+			}
+		}
+
+		&:first-child {
+			margin-top: 5px;
+		}
+
+		img {
+			width: 100%;
+			max-width: none;
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+			font-size: 18px;
+
+			strong {
+				margin-top: 0px;
+			}
+		}
+
+		h4 {
+			margin-bottom: 17px;
+		}
+
+	}
+
+}

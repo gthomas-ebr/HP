@@ -1,0 +1,201 @@
+
+.accordion-expand {
+  margin: 0 auto;
+  max-width: 1163px;
+  text-align: right;
+  margin-bottom: 18px;
+  position: relative;    
+  padding-left: 20px;
+  padding-right: 20px;
+  width: calc(100% - 40px);
+
+  span {
+    margin-right: 55px;
+    background-color: #A5CF4F;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 1px 10px;
+    cursor: pointer;
+    display: inline-block;
+
+    &:after {
+      height: 37px;
+      width: 37px;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      background-size: 100%;
+    }
+
+    &.expand:after {
+      background-image: url(../../images/tepezza/Expand.png);
+    }
+    &.expand:hover:after {
+      background-image: url(../../images/tepezza/isi-plus.png);
+    }
+
+    &.expand.hide {
+      display: none;
+    }
+
+    &.collapse:after {
+      background-image: url(../../images/tepezza/Collapse.png);
+    }
+    &.collapse:hover:after {
+      background-image: url(../../images/tepezza/isi-minus.png);
+    }
+  }
+  @media  (max-width: $mobile) {
+    span {
+      margin-right: 15px;
+      font-size: 20px;
+
+      &:after {
+        height: 27px;
+        width: 27px;
+        top: 3px;
+      }
+    }
+  }
+}
+
+.accordion-list {
+
+  @media (max-width: $mobile) {
+    margin-bottom: 15px;
+  }
+
+  .card {
+    background: #e2e2e2;
+    border-bottom: none;
+    text-align: left;
+    padding: 0;
+
+    > .card-title {
+      padding: 25px 20px 30px;
+      display: block;
+      width: 100%;
+      margin: 0;
+      border-bottom: 1px solid #aaa9a9;
+
+      &:after {
+        content: none;
+      }
+
+      a {
+        background: transparent;
+        color: #005133;
+        font-size: 35px;
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1163px;
+        padding-right: 50px;
+
+        &:before, &:after {
+          width: 37px;
+          height: 37px;
+          background-color: transparent;
+          background-position: center center;
+          transform: none;
+          top: 0;
+          right: 0;
+          background-size: 100%;
+          transform: none !important;
+        }
+        &:after {
+          background-image: url(../../images/tepezza/Collapse.png);
+        } 
+        &:hover:after {
+          background-image: url(../../images/tepezza/isi-minus.png);
+        } 
+        &.collapsed:before {
+          background-image: url(../../images/tepezza/isi-open.svg);
+          z-index: 1;
+        } 
+        &.collapsed:hover:before {
+          background-image: url(../../images/tepezza/isi-plus.png);
+          z-index: 1;
+        } 
+      }
+    }
+
+    > .row {
+      display: block;
+      flex: none;
+      background-color: #f5f5f5;
+    }
+    
+  }
+
+  // .row {
+  //   display: block;
+  //   flex: none;
+  // }
+
+  .col > div {
+    background: #f5f5f5;
+  }
+
+  .card-body {
+    margin: 0 auto;
+    max-width: 1163px;
+    padding: 30px 0px 60px;
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    a {
+      display: inline-block;    
+      margin-top: 15px;
+      padding: 0 10px;
+    }
+  }
+
+  @media  (max-width: $mobile) {
+    .card {
+      > .card-title {
+
+        padding: 16px 20px 14px;
+
+        a {
+          font-size: 22px;
+          padding-right: 30px;
+
+          &:before, &:after {
+            height: 27px;
+            width: 27px;
+          }
+        }
+      }
+    }
+    .card-body {
+      padding: 20px 35px 50px;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      a {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.accordion-list {
+  .card {
+    &:last-child {
+      .card-body {
+        padding: 30px 0 0;
+          @media  (max-width: $mobile) {
+             padding: 20px 35px 0;
+          }
+      }
+    }
+  }
+}

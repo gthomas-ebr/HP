@@ -1,0 +1,496 @@
+.pam-form {
+  padding: 50px 0px;
+  margin: 0 auto;
+
+  .form-wrapper {
+    background-color: transparent;
+    padding: 0;
+    width: 474px;
+    margin: 0 auto;
+
+    @media (max-width: $tablet) {
+      width: 474px !important;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 1.09;
+    letter-spacing: 0.38px;
+    text-align: center;
+    color: #d61a7d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    &.optional {
+      padding: 20px 0;
+    }
+  }
+
+  .form-group {
+    text-align: left;
+
+    .form-check-input {
+      position: relative;
+      margin-left: 0px;
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.28px;
+      color: #555555;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      border: solid 1px #555555;
+      background-color: #ffffff;
+      height: 48px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.28px;
+    color: #555555;
+    margin-top: 25px;
+  }
+
+  fieldset {
+    margin-bottom: 15px;
+
+    .form-check {
+      margin-bottom: 20px;
+    }
+
+    .form-check-label {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.28px;
+      color: #555555;
+      margin-left: 5px;
+    }
+
+    input[type=radio] {
+      @media (max-width: $mobile) {
+        top: -5px;
+      }
+
+      position: absolute;
+      opacity: 0;
+      width: 22px;
+      height: 22px;
+      z-index: 99;
+      top: 0;
+      cursor: pointer;
+
+      @media (max-width: $mobile) {
+        width: 25px;
+        height: 25px;
+      }
+
+      &+label {
+        padding-left: 10px;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 0;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          left: 0px;
+          top: 3px;
+          border: 2px solid #a14c9c;
+          border-radius: 50%;
+          background-color: #fff;
+
+          @media (max-width: $mobile) {
+            top: 6px;
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+
+      &:checked {
+        &+label {
+          &:after {
+            background-color: #7c2468;
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 6px;
+            top: 9px;
+            border-radius: 50%;
+
+            @media (max-width: $mobile) {
+              top: 14px;
+              width: 9px;
+              height: 9px;
+              left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  p.termsConditions {
+    padding: 30px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.24px;
+    color: #555555;
+    width: 86.5%;
+    margin: 0 auto;
+    font-weight: normal;
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-weight: bold;
+      color: #7c2468;
+    }
+
+    a {
+      color: #d61a7d;
+      text-decoration: underline;
+    }
+  }
+
+  div.radio-button-wrap.terms-checkbox {
+    text-align: center;
+    position: relative;
+
+    span.field-validation-error {
+      position: absolute;
+      top: 35px;
+      left: 42%;
+
+      @media (max-width: $mobile) {
+        left: 0;
+        top: 38px;
+      }
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.28px;
+      color: #555555;
+      text-decoration: none;
+    }
+
+    label {
+      position: relative;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      opacity: 0;
+      width: 0px;
+      height: 0px;
+      z-index: 99;
+      cursor: pointer;
+
+      &+label {
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          position: relative;
+          margin-right: 15px;
+          left: 0;
+          top: 5px;
+          border: 1px solid #555555;
+          background-color: #fff;
+
+          @media (max-width: $mobile) {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+
+      &:checked {
+        &+label {
+          &:after {
+            content: "\2713";
+            display: inline-block;
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 0;
+            top: 6px;
+            text-align: center;
+            font-size: 13px;
+
+            @media (max-width: $mobile) {
+              top: 1px;
+              font-size: 20px;
+              left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-submit {
+    text-align: center;
+    width: 310px;
+    margin: 20px auto;
+    margin-top: 40px;
+
+    @media (max-width: $mobile) {
+      margin-top: 25px;
+      width: 100%;
+      margin: 10px auto;
+      margin-top: 35px;
+    }
+  }
+
+  .form-control.input-validation-error {
+    border: solid 1px #fc3d3d;
+  }
+
+  .field-validation-error {
+    span {
+      font-size: 16px;
+      line-height: 1.71;
+      letter-spacing: 0.24px;
+      color: #fc3d3d;
+    }
+  }
+
+  .form-check-input.is-patient.input-validation-error,
+  .form-check-input.is-caregiver.input-validation-error {
+    &+label {
+      &:before {
+        border: solid 2px #fc3d3d !important;
+      }
+    }
+  }
+
+  .form-check-input.input-validation-error {
+    &+label {
+      &:before {
+        border: solid 2px #fc3d3d !important;
+      }
+    }
+  }
+
+  fieldset {
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+
+    .field-validation-error {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+
+  &.pam-form-reg{
+    padding: 0px 0px 40px 0px;
+
+    .privacy-note{
+      line-height: 1.57;
+      letter-spacing: 0.24px;
+      color: #555555;
+      width: 86%;
+      margin: 0 auto;
+      font-weight: normal;
+      margin-bottom: 20px;
+      padding: 30px;
+      margin-top: 20px;
+  
+      @media (max-width: 768px){ 
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+      }
+  
+      p{
+        font-size: 14px !important;
+        margin: 0px;
+        font-weight: 400 !important;
+      }
+    }
+
+    fieldset {
+
+      input[type=radio] + label:before{
+        border: 2px solid #7C2468;
+      }
+
+      &:first-of-type {
+        margin-bottom: 17px;
+  
+        .form-check {
+          margin-bottom: 15px;
+        }
+      }
+
+      .form-check {
+        margin-bottom: 25px;
+      }
+    }
+
+    .termsConditions{
+      margin-top: 50px;
+      font-size: 14px !important;
+      padding: 32px 21px 25px 28px;
+    }
+
+    .radio-button-wrap{
+      .field-validation-error{
+        position: relative;
+      top: -15px;
+      }
+    }
+
+    .label-parent{
+      font-size: 16px !important;
+      margin-bottom: 20px;
+
+      &:first-of-type{
+        margin-bottom: 15px;
+      }
+
+      span{
+        font-weight: 500;
+      }
+  
+      @media (min-width: 768px){ 
+
+        &:first-of-type{
+          margin-left: 0px;
+        width: calc(100% + 140px);
+        }
+      }
+  
+      &:last-child{
+        margin-top: 43px;
+      }
+    }
+
+    div {
+      &.radio-button-wrap{
+      &.terms-checkbox{
+      @media (max-width: $mobile) {
+        text-align: left;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+    .form-group{
+
+      label{
+        margin-bottom: 3px;
+      }
+
+      &:last-of-type{
+        margin-bottom: 43px;
+      }
+    }
+
+    .form-submit{
+      margin-top: 25px;
+    }
+  }
+}
+
+.check-hide {
+  display: none;
+
+  fieldset {
+    .form-check {
+      margin-bottom: 0 !important;
+
+      &:first-of-type {
+        @media (max-width: $mobile) {
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+}
+
+.select-one {
+  padding: 0 25px;
+
+  #isPatient-error {
+    display: none;
+  }
+
+  fieldset {
+    width: 70%;
+
+    .form-check:first-of-type {
+      float: left;
+
+      @media (max-width: $mobile) {
+        float: none;
+      }
+    }
+
+    .form-check {
+      float: right;
+
+      @media (max-width: $mobile) {
+        float: none;
+      }
+    }
+  }
+}
+
+.pam-form-heading{
+  font-size: 24px !important;
+      width: 84%;
+      margin: 31px auto 16px auto;
+      text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pam-form-heading{
+    font-size: 20px !important;
+      width: 100%;
+      margin: 20px auto 16px auto;
+  }
+}

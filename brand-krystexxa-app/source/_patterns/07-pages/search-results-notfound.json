@@ -1,0 +1,186 @@
+{
+	"searchNotFound":{
+		"footerGeneric": {
+	    "imageList": {
+	      "imgLink": "#",
+	      "linkClass": "",
+	      "imgPath": "../../images/krystexxa/horizon-logo.png",
+	      "imgAlttxt": "No Image"
+	    },
+	    "footLinks": [
+	      {
+	        "links": {
+	          "link": "#",
+	          "linkClass": "",
+	          "linkType": "",
+	          "linkTarget": "",
+	          "linkTxt": "Privacy policy"
+	        }
+	      },
+	      {
+	        "links": {
+	          "link": "#",
+	          "linkClass": "",
+	          "linkType": "",
+	          "linkTarget": "",
+	          "linkTxt": "Terms of use"
+	        }
+	      },
+	      {
+	        "links": {
+	          "link": "#",
+	          "linkClass": "",
+	          "linkType": "",
+	          "linkTarget": "",
+	          "linkTxt": "Contact us"
+	        }
+	      },
+	      {
+	        "links": {
+	          "link": "#",
+	          "linkClass": "",
+	          "linkType": "",
+	          "linkTarget": "",
+	          "linkTxt": "Sitemap"
+	        }
+	      }
+	    ],
+	    "footerPara": [
+	      {
+	        "paragraph": {
+	          "paraTxt": "This site is intended for U.S. residents only. ©2019.<br class=\"visible-mobile\"> KRYSTEXXA and the HORIZON logo are trademarks owned by or licensed to<br class=\"visible-mobile\"> Horizon Pharma Rheumatology LLC. <br class=\"visible-desktop\">©2019 Horizon Therapeutics plc<br class=\"visible-mobile\">  &nbsp;&nbsp;P-KRY-01102 10/19"
+	        }
+	      }
+	    ]
+  	},
+  	  "textBannerImage":{
+    "banner-padding":"banner-padding",
+    "headingTag": "h1",
+    "headingTxt": "search results",
+      "imageList": {
+        "imgPath": "../../images/krystexxa/search-icon.svg",
+        "mobImgPath": "../../images/krystexxa/search-icon.svg",
+        "tabImgPath": "../../images/krystexxa/search-icon.svg",
+        "imgAlttxt": "alt text"
+      }
+  },
+  	"searchResults": {
+		"searchResultsWrapperClass": "searchResults",
+		"searchWrapperId": "searchResults",
+		"resultsWrapperClass": "resultsWrapper",
+		"wrapperId":"resultsWrapper",
+		"pageHead":{
+		"headingTag": "h1",
+		"headingTxt": "Search Results for: <span>LOREM IPSUM</span>",
+		"headingClass": "page-heading",	
+		},
+		"article":{
+		 "headingTag": "h2",
+        "headingTxt": "WE’RE SORRY, NO RESULTS MATCH YOUR SEARCH",
+   		}		
+	},
+	"questionSection":{
+		"bgColor":"bg-grey-light",
+		  "headingTag": "h2",
+          "headingTxt": "QUESTIONS?",
+          "paragraph": {
+            "paraTxt": "Gout Nurse Advocates are here for you </p> <p>Monday - Friday 8:00 AM to 8:00 ET at 833-469-4688."
+          },
+
+	},
+	 "isiSelector": {
+      "headingTag": "h2",
+        "headingTxt": "IMPORTANT SAFETY INFORMATION",
+      "headPara":{
+        "headingTag": "h5",
+            "headingTxt": "Intended for U.S residents only.",
+        },
+        "links": {
+            "link": "#",
+            "linkClass": "",
+            "linkTxt": "",
+        },
+        "isiTop": {
+          "headingTag": "h4",
+          "headingTxt": "What is the most important information I should know about KRYSTEXXA (pegloticase)?",
+          "paragraph": {
+            "paraTxt": "Serious allergic reactions may happen in some patients who receive KRYSTEXXA. These allergic reactions can be life threatening and usually happen within 2 hours of the infusion.</p><p>KRYSTEXXA should be given to you by a doctor or nurse in a healthcare setting where serious allergic reactions can be treated. Your doctor or nurse should watch you for any signs of a serious allergic reaction during and after your treatment with KRYSTEXXA.</p><p><strong>Tell your doctor or nurse right away if you have any of these symptoms during or after your treatment with KRYSTEXXA:</strong>"
+          },
+          "listWrap": {
+            "listType": "ul",
+             "list": [{
+                "listItem": "Wheezing, shortness of breath, cough, chest tightness, chest pain, or trouble breathing"
+              },
+              {
+                "listItem": "Dizziness, fainting, fast or weak heartbeat or feeling nervous"
+              },
+              {
+                "listItem": "Reddening of the face, itching, hives, rash, or feeling warm"
+              },
+              {
+                "listItem": "Swelling of the throat or tongue, throat tightness, hoarse voice or trouble swallowing"
+              }
+            ]
+          }
+        },
+        "isiCenter": {
+          "headingTag": "h4",
+          "headingTxt": "Who should not receive KRYSTEXXA?",
+          "paragraph": {
+            "paraTxt": "Do not receive KRYSTEXXA if you have a rare blood problem called glucose 6-phosphate dehydrogenase (G6PD) deficiency or favism. Your doctor should test you for G6PD before you start KRYSTEXXA.</p><p>KRYSTEXXA is not recommended if you have high levels of uric acid without a history of gout.</p><p><strong>Before you receive KRYSTEXXA, tell your doctor if you:</strong>"
+          },
+          "listWrap": {
+            "listType": "ul",
+              "list": [{
+                "listItem": "Know you have G6PD deficiency"
+              },
+              {
+                "listItem": "Ever had any heart problems or high blood pressure"
+              },
+              {
+                "listItem": "Are pregnant or planning to become pregnant. It is not known if KRYSTEXXA will harm your unborn baby"
+              },
+              {
+                "listItem": "Are breastfeeding or plan to breastfeed. It is not known if KRYSTEXXA passes into your breast milk"
+              }
+            ]
+          },
+          "centerPara": {
+            "paragraph": {
+              "paraTxt": "<strong>Tell your doctor about all the medicines you take.</strong>Do not take any other uric acid lowering drug, such as allopurinol or febuxostat (Uloric®), while taking KRYSTEXXA.</p><p><strong>Prior to your treatment with KRYSTEXXA, your doctor may give you medicine to help reduce your chance of getting a reaction.</strong>Take these medicines as directed by your doctor or nurse. Your doctor will also test your uric acid levels prior to each treatment to monitor your response to KRYSTEXXA"
+            }
+          }
+
+        },
+        "isiBottom": {
+          "headingTag": "h4",
+          "headingTxt": "What are the possible side effects of KRYSTEXXA?",
+          "paragraph": {
+            "paraTxt": "Please review important information section above. The most common side effects in patients taking KRYSTEXXA were gout flare-ups or attacks, allergic reactions, nausea, bruising, sore throat, constipation, chest pain, and vomiting.</p><p>This is not a complete list of all possible side effects. Tell your doctor or treatment team if you have any side effect that bothers you or that does not go away.</p><p>Please see the <a href=\"#\" target=\"_blank\">Medication Guide<\/a> and <a href=\"#\" target=\"_blank\">Prescribing Information<\/a> for more information.</p><p>You are encouraged to report negative side effects of prescription drugs to the FDA. Visit <a href=\"#\" target=\"_blank\" data-overlay=\"exit\">www.fda.gov\/safety\/medwatch<\/a>, or call the FDA at <a href=\"tel:1-800-FDA-1088\">1-800-FDA-1088<\/a>.<p>"
+          }
+        }
+    },
+    "isiFixedSelector":{
+        "selectorFixedClass": "isi-tray",
+    },
+    "listDemo":{
+      "listWrap":{
+        "listType": "ul",
+        "listClass": "bulleted",
+        "list": [{
+          "listItem": "<span>CONVERT URIC ACID:</span> Only KRYSTEXXA changes uric acid into a water-soluble substance called allantonin that your body can easily can get rid of through urine."
+        },
+        {
+         "listItem": "<span>LOWER URIC ACID LEVEL IN 24 HOURS:</span> After just one IV treatment,KRYSTEXXA lowers your uric acid level enough to start dissolving years of harmful uric acid crystal buildup " 
+        },
+        {
+          "listItem": "<span>COMPLETELY DISSOLVE GOUT BUILDUP:</span> It can take more than two years for iroal gout medicines to dissolve even a small amount of uric acid crystal buildup.KRYSTEXXA can dissolve all of it in about 6 months."
+        }
+      ]
+    }
+  },
+
+
+	},
+
+}

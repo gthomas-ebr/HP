@@ -1,0 +1,69 @@
+.image-carousal-wrap{
+	.slick-list {
+		width: calc(100% - 50px);
+		margin: 0 auto;
+	}
+	.image-carousal{
+		.carousal-content{
+			img{
+				margin: 0 auto;
+				max-width: 500px;
+			}
+		}
+		.slick-arrow{
+			top: 50%;
+			&.slick-disabled{
+				display: block !important;
+			}
+			&.prev-arrow{
+				left: 0;
+				z-index: 9;
+			}
+			&.next-arrow{
+				right: 0;
+				z-index: 9;
+			}
+			@media  (max-width: 1023px){
+				&.prev-arrow{
+					left: -25px;
+				}
+				&.next-arrow{
+					right: -25px;
+				}
+			}
+		}
+		.slick-dots{
+			margin-top: 15px;
+			margin-bottom: 10px;
+			position: relative;
+			li{
+				width: auto;
+				&:first-of-type{
+					margin-left: 0;
+				}
+				button{
+					width: 18px;
+					height: 18px;
+					padding: 0;
+					&:before{
+						width: 18px;
+						height: 18px;
+						border-color: #fff;
+						border-width: 1.5px;
+					}
+				}
+				&.slick-active{
+					button{
+						&:before{
+							border-color: transparent;
+							background-color: #fff;
+							width: 18px;
+							height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

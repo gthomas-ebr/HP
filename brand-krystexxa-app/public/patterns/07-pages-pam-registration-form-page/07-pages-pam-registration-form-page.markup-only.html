@@ -1,0 +1,105 @@
+<section>
+  <div class="container">
+    <div class="pam-form pam-form-reg">
+      <div class="caption">
+      </div>
+      <form action="" novalidate="novalidate" id="pamForm" class="formregistration" method="post">
+        <div class="form-wrapper">
+
+          <p class="label-parent">Has your doctor recommended KRYSTEXXA? <span>(Optional)</span></p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="DoctorRecommendation" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="DoctorRecommendationYes" name="DoctorRecommendation" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="true">
+              <label class="form-check-label " for="DoctorRecommendationYes">Yes</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="DoctorRecommendation" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="DoctorRecommendationNo" name="DoctorRecommendation" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="false">
+              <label class="form-check-label " for="DoctorRecommendationNo">No</label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="fname" class="">First Name</label>
+            <div class="">
+              <input id="fname" name="FirstName" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="fname" data-val-length-max="35" data-val-required="Please enter a first name.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="lname" class="">Last Name</label>
+            <div class="">
+              <input id="lname" name="LastName" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="lname" data-val-length-max="35" data-val-required="Please enter a last name.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="">Email</label>
+            <div class="">
+              <input id="email" name="Email" autoComplete="off" class="form-control" data-val="true" type="email" data-val-length-min="2" data-val-length="email" data-val-length-max="35" data-val-required="Please enter a correctly formatted email.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="emailconf" class="ConfirmEmail">Confirm Email</label>
+            <div class="">
+              <input id="emailconf" name="ConfirmEmail" autoComplete="off" class="form-control" data-val="true" type="email" data-val-length-min="2" data-val-length="The email fields do not match." data-val-email="The email fields do not match." data-val-length-max="35" data-val-equalto="The email fields do not match." ga-tag="input" data-val-equalto-other="*.Email" data-val-required="The email fields do not match.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="Zip" class="">Zip Code</label>
+            <div class="">
+              <input id="Zip" name="Zip" autoComplete="off" class="form-control" data-val="true" data-val-regex-pattern="^(\d{5})?$" maxlength="5" type="tel" data-val-length-min="5" data-val-length="Please enter a 5-digit ZIP Code." data-val-length-max="5" data-val-required="Please enter a 5-digit ZIP Code.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Zip" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="Phone" class="">Phone Number</label>
+            <div class="">
+              <input class="form-control" id="Phone" name="Phone" autoComplete="off" data-val="true" type="tel" placeholder="(XXX)-XXX-XXXX" data-val-regex-pattern="^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$" data-val-regex="Please enter a valid phone number." data-val-required="Please enter a 10-digit phone number.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+          </div>
+
+
+
+          <p class="label-parent">Best time of day to be reached:</p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Morning" name="CallTimePreference" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Morning" data-val-required="">
+              <label class="form-check-label " for="Morning">Morning</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Afternoon" name="CallTimePreference" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Afternoon" data-val-required="">
+              <label class="form-check-label " for="Afternoon">Afternoon</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Evening" name="CallTimePreference" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Evening" data-val-required="A selection is required.">
+              <label class="form-check-label " for="Evening">Evening</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <p class="termsConditions"><span>Privacy Notice and Consent:</span> I understand I am giving Horizon, its affiliates, and business partners permission to use the personal information provided in this registration form, as described in this authorization. I understand that the information I am providing may be used by Horizon Pharma to provide me with health and product information and related services concerning health conditions and treatments. By submitting this form, I consent to these uses and am confirming that I have read and agree to the Horizon Pharma <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy.</a> I understand that Horizon and its contracted third parties will NOT sell or rent personal information, and that the information provided in this form will be used in accordance with the Horizon Pharma <a href="#">Privacy Policy.</a> I understand I can cancel this authorization and opt out of Horizon program(s) at any time. I agree that this authorization will expire ten (10) years from the date submitted, or until my participation in the program ends through my cancellation. I acknowledge that I am submitting this form voluntarily, and that I am at least 18 years of age.</p>
+        <div class="radio-button-wrap terms-checkbox">
+          <span class="field-validation-valid" data-valmsg-for="Terms" data-valmsg-replace="true"></span>
+          <div class="form-check ">
+            <input id="Terms" name="Terms" autoComplete="off" class="form-check-input" data-val="true" type="checkbox" data-val-range="Please check box to continue." data-val-range-min="True" data-val-range-max="True" value="true" data-val-required="Please check box to continue.">
+            <label for="Terms"><strong>I accept</strong></label>
+          </div>
+        </div>
+
+        <div class="privacy-note">
+          <p class="">The Gout Nurse Advocate Program is a Horizon Therapeutics-sponsored patient support program that provides educational disease state information and resources about uncontrolled gout and KRYSTEXXA. By registering today, you will be provided with gout-related support, access to Patient Access Manager services (if applicable), and communications via phone, text message, and/or email.</p>
+        </div>
+
+        <button type="submit" class="cta-btn form-submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+</section>

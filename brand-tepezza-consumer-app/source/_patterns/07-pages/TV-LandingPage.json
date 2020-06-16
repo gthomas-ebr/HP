@@ -1,0 +1,27 @@
+{
+"tvHeader":{
+	      "brandLogoURL": "../../images/tepezza/LogoHeaderDesktop.png",
+      "topNavigation":
+      {
+        "wrapperClass": "",
+        "topNavigationLinks": [
+          {
+            "links":{
+              "linkClass": "active",
+              "linkTxt":"Full Prescribing Information"
+            }
+          },
+          {
+            "links":{
+              "linkTxt":"Important Safety Information"
+            }
+          },
+          {
+            "links":{
+              "linkTxt":"Healthcare Professionals"
+            }
+          }
+        ]
+      },
+}	
+}

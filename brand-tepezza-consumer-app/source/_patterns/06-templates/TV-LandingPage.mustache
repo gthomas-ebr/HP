@@ -1,0 +1,36 @@
+<!-- Header -->
+{{>tepezza-organisms-TV-header}}
+
+<br>
+<br>
+<br>
+<section>
+  {{>tepezza-organisms-tepezza-content-cta}}
+</section>
+
+<h1 class="text-center">two column content split </h1>
+<section class="border-full bg-grey padding-medium">
+ <div class="container">
+    <div class="row">
+      {{#tvTwoColumn}}
+        {{>starterkit-organisms-two-column-content-split}}
+      {{/tvTwoColumn}}
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<!-- Footer -->
+{{#commonHeaderFooterData}}
+  <!-- Footer -->
+  <section class="hz-footer-wrapper mb0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{>tepezza-organisms-footer}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}

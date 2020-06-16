@@ -1,0 +1,132 @@
+.content-carousel-wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+
+	.content-carousel{
+		position: static;
+
+		 .slick-list {
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+
+			@media  (max-width: $tablet){
+				width: calc(100% - 60px);
+			}
+		}
+
+		.carousal-content{
+			img{
+				margin: 0 auto;
+				max-width: 500px;
+			    margin-bottom: 17px !important;
+			}
+
+			h2 {
+			    font-size: 20px;
+			    letter-spacing: 0.06px;
+			    margin-top: 30px;
+			}
+			
+			p {
+			    margin-bottom: 0;
+			    font-size: 20px;
+			    letter-spacing: 0.06px;
+			    line-height: normal;
+			    sup {
+			    	top: -5px;
+			    }
+			}
+			@media  (max-width: $mobile){
+				h2 {
+				    font-size: 18px;
+					max-width: 90%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				
+				p {
+				    margin-bottom: 0;
+				    font-size: 18px;
+				}
+			}
+		}
+		.slick-arrow{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&.slick-disabled{
+				display: block !important;
+			}
+			&.prev-arrow{
+				left: 0;
+			}
+			&.next-arrow{
+				right: 0;
+			}
+			@media  (max-width: $mobile){
+				&.prev-arrow{
+					left: 10px;
+				}
+				&.next-arrow{
+					right: 10px;
+				}
+			}
+		}
+		.slick-dots{
+			margin-top: 30px;
+			margin-bottom: 0px;
+			position: relative;
+			bottom: 0;
+			li{
+				width: auto;
+				&:first-of-type{
+					margin-left: 0;
+				}
+				button{
+					width: 18px;
+				    height: 18px;
+				    padding: 0;
+				    border: 1.5px solid #d61a7d;
+				    border-radius: 50%;
+					&:before{
+						content: "";
+					}
+				}
+				&.slick-active{
+					button{
+						background-color: #d61a7d;
+					}
+				}
+			}
+			@media  (max-width: $mobile){
+				display: none !important;
+			}
+		}
+	}
+
+	
+	.slick-dotted.slick-slider {
+		margin-bottom: 0;
+	}
+}
+
+.bg-gradient {
+	.content-carousel-wrap .content-carousel .carousel-content {
+		h2, p {
+			color: #fff;
+		}
+	}
+
+	.content-carousel-wrap .content-carousel .slick-dots li.slick-active button {
+		background-color: #fff;
+	}
+
+	.content-carousel-wrap .content-carousel .slick-dots li button {
+		border-color: #fff;
+	}
+
+
+}

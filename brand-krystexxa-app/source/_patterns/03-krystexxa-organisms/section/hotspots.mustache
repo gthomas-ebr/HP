@@ -1,0 +1,77 @@
+{{#contentHotSpots}}
+<div class="hotspots">
+  {{#topPara}}
+  {{>starterkit-atoms-paragraph}}
+  {{/topPara}}
+  {{#hotSpotWrapper}}
+  <div class="content-parent">
+    {{#leftRow}}
+    <div class="left-row">
+      <div class="img-wrap">
+        {{#mainImg}}
+        <img src="{{imgSrc}}" alt="alt text" class="{{imgClass}}">
+        {{/mainImg}}
+        {{#spotImages}}
+        <div class="gout {{imgClass}}" data-img="{{data-img}}">
+       	<img src="{{imgSrc}}" alt="alt text" class="{{normalClass}}">
+        {{#hoverImg}}
+        <img src="{{imgSrc}}" alt="alt text" class="{{hoverClass}}">
+        {{/hoverImg}}
+        </div>
+ 
+        {{/spotImages}}
+        {{#spotBox}}
+        <div class="popup {{popUp}}" data-img="{{data-img}}">
+          {{>starterkit-atoms-paragraph}}
+          <button type="button"></button>
+        </div>
+        {{/spotBox}}
+      </div>
+      <div class="bottom-title">
+        {{#bottomTitle}}
+        {{>starterkit-atoms-paragraph}}
+        {{/bottomTitle}}
+      </div>
+    </div>
+    {{/leftRow}}
+    {{#rightRow}}
+    <div class="right-row">
+      <div class="img-wrap">
+        {{#mainImg}}
+        <img src="{{imgSrc}}" alt="alt text" class="{{imgClass}}">
+        {{/mainImg}}
+        {{#spotImages}}
+        <div class="gout {{imgClass}}" data-img="{{data-img}}">
+       	<img src="{{imgSrc}}" alt="alt text" class="{{normalClass}}">
+        {{#hoverImg}}
+        <img src="{{imgSrc}}" alt="alt text" class="{{hoverClass}}">
+        {{/hoverImg}}
+        </div>
+        {{/spotImages}}
+        {{#spotBox}}
+        <div class="popup {{popUp}}" data-img="{{data-img}}">
+          {{>starterkit-atoms-paragraph}}
+          <button type="button"></button>
+        </div>
+        {{/spotBox}}
+      </div>
+      <div class="bottom-title">
+        {{#bottomTitle}}
+        {{>starterkit-atoms-paragraph}}
+        {{/bottomTitle}}
+      </div>
+    </div>
+  </div>
+  {{/rightRow}}
+  {{/hotSpotWrapper}}
+  {{#tapRotate}}
+  <div class="tap-rotate">
+    <button type="button"></button>
+    {{>starterkit-atoms-paragraph}}
+  </div>
+  {{/tapRotate}}
+  {{#bottomPara}}
+  {{>starterkit-atoms-paragraph}}
+  {{/bottomPara}}
+</div>
+{{/contentHotSpots}}

@@ -1,0 +1,201 @@
+.multicolumncontent {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  .txt-wrap,
+  .txt-heading {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .txt-heading {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10px 0px 0;
+    font-weight: bold;
+
+    @media (max-width: $mobile) {
+      padding-bottom: 20px;
+    }
+  }
+
+  p {
+    margin-bottom: 0px;
+    font-size: inherit;
+    width: 100%;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  &.card-no-border {
+    a {
+      display: none;
+    }
+
+    .txt-wrap {
+      font-weight: 500;
+      line-height: 32px;
+      padding-top: 7px;
+
+      @media (max-width: $mobile) {
+        padding: 4px 0px 7px 0px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      padding-bottom: 20px;
+      border-bottom: 0;
+
+      &:last-of-type {
+        padding-bottom: 0px;
+      }
+    }
+     h5.large{
+      margin-top: 25px;
+      line-height: 36px;
+      font-weight: bold;
+      @media (max-width: $mobile) {
+        margin-top: 8px;
+        line-height: 26px;
+      }
+     }
+  }
+
+  &.card-mob-border {
+    margin: 60px 0 50px;
+
+    @media (max-width: $mobile) {
+      margin: 0px 0 0;
+
+      &:last-child {
+        padding-bottom: 20px;
+      }
+
+      p {
+        border-bottom: 2px solid #dddcdc;
+      }
+
+      .small-screen-img[src=""]~.large-screen-img {
+        display: none !important;
+      }
+
+      .txt-heading {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0px 0px 10px 0px;
+      }
+
+      .txt-wrap {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 30px 20px 30px;
+      }
+    }
+
+    a {
+      display: none;
+    }
+
+    border-right: 2px solid #dddcdc;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    @media (max-width: $mobile) {
+      border-right: 0px;
+
+      // &:last-child {
+      //     margin-bottom: 20px;
+      // }
+
+      // &:first-child {
+      //     margin-top: 20px;
+      // }
+    }
+  }
+
+  &.card {
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    border-right: 2px solid #dddcdc;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 24px 0 20px;
+
+    p {
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    a {
+      padding: 5px 10px;
+      margin: 20px 40px 0 40px;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 32px;
+
+      &.large-text {
+        font-size: 26px !important;
+        @media (max-width: 1023px){
+          font-size: 20px !important;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: rgba(200, 208, 187, 0.4);
+      cursor: pointer;
+
+      a {
+        background-color: #005133;
+        color: #F5F5F5;
+      }
+    }
+
+    &:last-child {
+      border-right: 0px;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0;
+      padding: 20px 0;
+      border-right: 0;
+      border-bottom: 2px solid #dddcdc;
+
+      a {
+        margin: 10px 20px;
+        font-size: 16px;
+        line-height: 22px;
+
+        &.large-text {
+          line-height: 36px !important;
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+  }
+}

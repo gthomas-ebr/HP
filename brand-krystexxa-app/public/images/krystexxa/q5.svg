@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="137px" viewBox="0 0 137 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>ICON</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PRC01_2.2_QUIZ_Landing-Page:-Question-5" transform="translate(-632.000000, -236.000000)">
+            <g id="ICON" transform="translate(633.000000, 237.000000)">
+                <path d="M67.5,135 C30.2206816,135 0,104.779318 0,67.5 C0,30.2206816 30.2206816,0 67.5,0 C104.779318,0 135,30.2206816 135,67.5 C135,104.779318 104.779318,135 67.5,135 Z" id="Fill-1" stroke="#EA0A8B" stroke-width="2" fill="#FFFFFF"></path>
+                <text id="5-/-6" font-family="Lato-Bold, Lato" font-size="23" font-weight="bold" letter-spacing="0.069">
+                    <tspan x="43.0395" y="77" fill="#D61A7D">5 </tspan>
+                    <tspan x="62.1065" y="77" fill="#979797">/ 6</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

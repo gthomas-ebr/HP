@@ -1,0 +1,385 @@
+<!-- Header -->
+{{#commonHeaderFooterData}}
+  <section class="hz-header-wrap">
+    <div class="gout-box green-bg">
+      <p>A TED Nurse Advocate can answer <br> your questions. <a href="tel:0">Call 1-833-4-TEPEZZA</a></p>
+      <a href="#" class="close-icon"><img src="../../images/tepezza/remove.png" alt=""></a>
+    </div>
+    <div class="container-full">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Header starts -->
+          {{#header}}
+            <div class="header">
+              <div class="wrapper">
+                <div class="top-container">
+                  <!--  <a href="#" class="icon-home">
+                    <img src="../../images/tepezza/icon-home.png" alt="">
+                  </a>-->
+                  <div class="logo-wrapper">
+                    <div class="logo">
+                      <a href="#" class="logo-container">
+                        {{>starterkit-atoms-logo}}
+                      </a>
+                    </div>
+                  </div>
+                  <div class="top-nav-links visible-desktop">
+                    {{>starterkit-molecules-top-navigation}}
+                  </div>
+                  <div class="gout-box green-bg visible-desktop">
+                    <p>A TED Nurse Advocate can <br>answer your questions.<br> <a href="tel:0">Call 1-833-4-TEPEZZA</a></p>
+                  </div>
+                </div>
+                <div class="bottom-container">
+                  <div class="nav-wrapper">
+                    <div class="hamburger visible-mobile">
+                      <div class="menuIcon">
+                      </div>
+                    </div>
+                    <div class="menu-wrapper">
+                      <div class="nav-bar">
+                        <a href="#" class="active icon-home visible-desktop">
+                          <img src="../../images/tepezza/icon-home.png" alt="">
+                        </a>
+                        {{>starterkit-molecules-main-navigation}}
+                        <div class="top-nav-links visible-mobile">
+                          {{>starterkit-molecules-top-navigation}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col search">
+                      <span class="search-toggle"></span>
+                      <div class="search-inner">
+                        {{>starterkit-molecules-header-search}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/header}}
+          <!-- Header ends -->
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}
+
+<!-- Signup Wrap -->
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="signup-wrapper">
+          <h1>Sign Up to Learn More</h1>
+          <h4>Tell us a little about yourself. This will help us deliver the information about TEPEZZA and Thyroid Eye Disease (TED) that’s most helpful for you.</h4>
+          <p><i>All fields are required unless marked optional.</i></p>
+          <div class="form-wrapper">
+            {{#signupConsumer}}
+              <form action="{{formAction}}" novalidate="novalidate" id="signup" class="formregistration" method="post">
+                <input type="hidden" name="__componentInstanceName" value="HCP-CRM">
+                <div class="field-wrapper">
+                  <div class="notify-method">
+                    <label for="method">Are you a patient or a caregiver?</label>
+                    {{#notifyMethod}}
+
+                      <div class="radio-button-wrap">
+                        {{#radioField}}
+                          <div class="form-check {{radioButtonClass}}">
+                            <input {{#attributes}} {{ name }}="{{ value }}" {{/attributes}} {{#required }} data-val-required="{{ errorMessage }}" {{/required }}>
+                            <label class="form-check-label {{radioLableClass}}" for="{{labelFor}}">{{{radioTxt}}}</label>
+                          </div>
+                          <span class="field-validation-error" data-valmsg-for="{{radioForID}}" data-valmsg-replace="true"></span>
+                        {{/radioField}}
+                      </div>
+                    {{/notifyMethod}}
+                  </div>
+
+
+                  <div class="patient-block">
+                    <div class="second-radio">
+                      <label for="method">Which of these best describes you?</label>
+                      <fieldset class="radio-button-wrap">
+                        <div class="form-check ">
+                          <input id="UserJourney" name="PatientUserJourney" autocomplete="off" value="ExistingPatient" class="form-check-input user-describe" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label  " for="UserJourney"><span>I am currently being treated with TEPEZZA</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="UserJourney" data-valmsg-replace="true"></span>
+                        <div class="form-check ">
+                          <input id="UserJourneyOne" name="PatientUserJourney" autocomplete="off" value="NewPatient" class="form-check-input user-describe-one" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="UserJourneyOne"><span>I have been prescribed TEPEZZA, but have not started treatment yet</span></label>
+                        </div>
+                        <div class="form-check ">
+                          <input id="UserJourneyTwo" name="PatientUserJourney" autocomplete="off" value="Prospect" class="form-check-input user-describe-three" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="UserJourneyTwo"><span>I am interested in learning more about TEPEZZA and how it treats TED</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="UserJourney" data-valmsg-replace="true"></span>
+
+                      </fieldset>
+                    </div>
+                    <div class="notify-checkbox">
+                      <label for="method">(Optional . Check all that apply)</label>
+
+                      <div class="radio-button-wrap">
+
+                        <div class="form-check ">
+                          <input id="notifyGrave" name="notifyGrave" autocomplete="off" class="form-check-input" type="checkbox" data-val-range="Select one of the two options below." data-val-range-min="True" data-val-range-max="True" value="off" data-val-required="Select one of the two options below." ga-tag="checkbox">
+                          <label class="form-check-label " for="notifyGrave"><span>I have been diagnosed with Grave's disease</span></label>
+                        </div>
+
+                      </div>
+                      <div class="radio-button-wrap">
+
+                        <div class="form-check ">
+                          <input id="notifyHashimoto" name="notifyHashimoto" autocomplete="off" class="form-check-input" type="checkbox" data-val-range="Select one of the two options below. " data-val-range-min="True" data-val-range-max="True" value="off" data-val-required="Select one of the two options below." ga-tag="checkbox">
+                          <label class="form-check-label " for="notifyHashimoto"><span>I have been diagnosed with Hashimoto's disease</span></label>
+                        </div>
+
+                      </div>
+                      <span class="field-validation-error" data-valmsg-for="" id="notify" data-valmsg-replace="true"> </span>
+                    </div>
+
+                    <div class="select-parent">
+                      <div class="form-group">
+                        <label for="">How many TEPEZZA treatments have you had?</label>
+                        <div class="select-wrapper">
+                          <select name="TreatmentCount" id="selectvalue" value="TreatmentCount" data-val="true" data-val-required="This field is required." class="form-control" ga-tag="select-single">
+                            <option value="" selected="" disabled="">--Please select--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">Don't know</option>
+                          </select>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="TreatmentCount" data-valmsg-replace="true"></span>
+                      </div>
+                    </div>
+                    <div class="third-radio">
+                      <label for="method">Would you like to receive a call from a Patient Access Manager (PAM)
+                        <span data-toggle="tooltip" data-html="true" data-placement="top" title="" data-original-title=" Your PAM is your personal, single point of contact for support. They can help you with insurance coverage questions, finding an IV treatment center, and more."><span class="tooltip-icon"></span></span> who can help you manage your TEPEZZA treatment?</label>
+                      <fieldset class="radio-button-wrap">
+                        <div class="form-check ">
+                          <input id="ProgramPAM" name="Program-PAM" autocomplete="off" class="form-check-input user-manage" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio" value="Yes">
+                          <label class="form-check-label " for="ProgramPAM"><span>Yes</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="ProgramPAM" data-valmsg-replace="true"></span>
+                        <div class="form-check ">
+                          <input id="ProgramPAMOne" name="Program-PAM" autocomplete="off" class="form-check-input user-manage-one" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio" value="No">
+                          <label class="form-check-label " for="ProgramPAMOne"><span>No</span></label>
+                        </div>
+                        <div class="form-check ">
+                          <input id="ProgramPAMTwo" name="Program-PAM" autocomplete="off" class="form-check-input user-manage-three" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio" value="HavePAM">
+                          <label class="form-check-label " for="ProgramPAMTwo"><span>I already have PAM</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="ProgramPAM" data-valmsg-replace="true"></span>
+
+                      </fieldset>
+                    </div>
+                    <div class="fourth-radio">
+                      <label for="method">Would you like to receive TEPEZZA patient support materials, such as a guide on what to expect during treatment, by mail?</label>
+                      <fieldset class="radio-button-wrap">
+                        <div class="form-check ">
+                          <input id="Opt-in-Postal" name="Opt-in-Postal" autocomplete="off" class="form-check-input user-mail" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="checkbox" value="Yes">
+                          <label class="form-check-label " for="Opt-in-Postal"><span>Yes</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="Opt-in-Postal" data-valmsg-replace="true"></span>
+                        <div class="form-check ">
+                          <input id="Opt-in-PostalOne" name="Opt-in-Postal" autocomplete="off" class="form-check-input user-mail-one" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="checkbox" value="No">
+                          <label class="form-check-label " for="Opt-in-PostalOne"><span>No</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="Opt-in-Postal" data-valmsg-replace="true"></span>
+
+                      </fieldset>
+                    </div>
+
+
+                  </div><!-- patientblockend -->
+
+                  <div class="caregiver-block">
+
+                    <div class="second-radio">
+                      <label for="method">Which of these best describes you?</label>
+                      <fieldset class="radio-button-wrap">
+                        <div class="form-check ">
+                          <input id="CaregiverJourney" name="CaregiverJourney" autocomplete="off" value="ExistingPatient" class="form-check-input user-describe" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="CaregiverJourney"><span>A loved one currently being treated with TEPEZZA</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="CaregiverJourney" data-valmsg-replace="true"></span>
+                        <div class="form-check ">
+                          <input id="CaregiverJourneyOne" name="CaregiverJourney" autocomplete="off" value="NewPatient" class="form-check-input user-describe-one" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label" for="CaregiverJourneyOne"><span>A loved one has been prescribed TEPEZZA but has not started treatment yet</span></label>
+                        </div>
+                        <div class="form-check ">
+                          <input id="CaregiverJourneyTwo" name="CaregiverJourney" autocomplete="off" value="Prospect" class="form-check-input user-describe-three" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="CaregiverJourneyTwo"><span>I am looking for information on TEPEZZA and how it treats TED for a loved one</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="CaregiverJourney" data-valmsg-replace="true"></span>
+
+                      </fieldset>
+                    </div>
+                    <div class="notify-checkbox">
+                      <label for="method">(Optional . Check all that apply)</label>
+                      <div class="radio-button-wrap">
+
+                        <div class="form-check ">
+                          <input id="notifyGraveOne" name="Diagnosis" autocomplete="off" class="form-check-input" type="checkbox" data-val-range="Select one of the two options below." data-val-range-min="True" data-val-range-max="True" value="Graves" data-val-required="Select one of the two options below." ga-tag="checkbox">
+                          <label class="form-check-label " for="notifyGraveOne"><span>A loved one has been diagnosed with Graves disease</span></label>
+                        </div>
+
+                      </div>
+                      <div class="radio-button-wrap">
+
+                        <div class="form-check ">
+                          <input id="notifyHashimotoOne" name="Diagnosis" autocomplete="off" class="form-check-input" type="checkbox" data-val-range="Select one of the two options below. " data-val-range-min="True" data-val-range-max="True" value="Hashimotos" data-val-required="Select one of the two options below." ga-tag="checkbox">
+                          <label class="form-check-label " for="notifyHashimotoOne"><span>A loved one has been diagnosed with Hashimoto's disease</span></label>
+                        </div>
+
+                      </div>
+                      <span class="field-validation-error" data-valmsg-for="" id="notify" data-valmsg-replace="true"> </span>
+                    </div>
+                    <div class="select-parent">
+                      <div class="form-group">
+                        <label for="">How many TEPEZZA treatments have you had?</label>
+                        <div class="select-wrapper">
+                          <select name="TreatmentCount" id="selectvalue" data-hide-disabled="true" value="TreatmentCount" data-val="false" data-val-required="This field is required." class="form-control" ga-tag="select-single">
+                            <option value="" selected="" disabled="">-Please Select-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">Don't know</option>
+                          </select>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="TreatmentCount" data-valmsg-replace="true"></span>
+                      </div>
+                    </div>
+
+                    <div class="fourth-radio">
+                      <label for="method">Would you like to receive TEPEZZA patient support materials, such as a guide on what to expect during treatment, by mail?</label>
+                      <fieldset class="radio-button-wrap">
+                        <div class="form-check ">
+                          <input id="Opt-in-Postal" name="Opt-in-Postal" autocomplete="off" class="form-check-input user-mail" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="Opt-in-Postal"><span>Yes</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="Opt-in-Postal" data-valmsg-replace="true"></span>
+                        <div class="form-check ">
+                          <input id="Opt-in-Postal-One" name="Opt-in-Postal" autocomplete="off" class="form-check-input user-mail-one" data-val="true" type="radio" data-val-required="A selection is required." ga-tag="radio">
+                          <label class="form-check-label " for="Opt-in-Postal-One"><span>No</span></label>
+                        </div>
+                        <span class="field-validation-valid" data-valmsg-for="Opt-in-Postal" data-valmsg-replace="true"></span>
+
+                      </fieldset>
+                    </div>
+
+                  </div><!-- caregiverblockend -->
+                </div><!-- fieldwrapper -->
+                {{#formInput}}
+                  <div class="form-input-block rs_preserve">
+                    {{#firstNameInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/firstNameInput}}
+                    {{#lastNameInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/lastNameInput}}
+                    {{#emailInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/emailInput}}
+                    {{#confirmEmailInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/confirmEmailInput}}
+                    {{#phoneInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/phoneInput}}
+                    {{#zipcodeInput}}
+                      {{>starterkit-molecules-input-with-label}}
+                    {{/zipcodeInput}}
+                    {{#additionalInput}}
+                      <div class="additional-input">
+                        {{#address1}}
+                          {{>starterkit-molecules-input-with-label}}
+                        {{/address1}}
+                        {{#address2}}
+                          {{>starterkit-molecules-input-with-label}}
+                        {{/address2}}
+                        {{#city}}
+                          {{>starterkit-molecules-input-with-label}}
+                        {{/city}}
+                        <div class="form-group">
+                          {{#stateInput}}
+                            {{>starterkit-molecules-custom-dropdown}}
+                          {{/stateInput}}
+                        </div>
+
+                      </div>
+                    {{/additionalInput}}
+                  </div>
+
+                {{/formInput}}
+                <div class="privacy-submit">
+                  <div class="privacy-note">
+                    {{#consentText}}
+                      {{>starterkit-atoms-paragraph}}
+                    {{/consentText}}
+                  </div>
+                  <div class="radio-button-wrap">
+                    <div class="form-check ">
+                      <input id="Terms" name="Terms" autocomplete="off" class="form-check-input" data-val="true" type="checkbox" value="true" data-msg-required="Please check box to continue" required="" ga-tag="checkbox">
+                      <label class="form-check-label " for="Terms"><span>I agree </span></label>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Terms" data-valmsg-replace="true"></span>
+                  </div>
+
+
+                  <button type="submit" class="{{buttonClass}}" ga-tag="submit">Submit Now</button>
+                </div>
+              </form>
+            {{/signupConsumer}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Isi section -->
+<section class="important-information">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{>tepezza-organisms-tepezza-isi}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+</section>
+
+<section>
+  {{#isiFixedSelector}}
+    {{>tepezza-organisms-tepezza-isi}}
+  {{/isiFixedSelector}}
+</section>
+<!-- isi Fixed panel -->
+<!-- Footer -->
+{{#commonHeaderFooterData}}
+  <!-- Footer -->
+  <section class="hz-footer-wrapper mb0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{>tepezza-organisms-footer}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}

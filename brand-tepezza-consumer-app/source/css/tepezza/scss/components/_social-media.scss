@@ -1,0 +1,119 @@
+.social-share-wrap {
+  margin: 0;
+  @media  (max-width: $tab-landscape) {
+    width: 100%;
+    clear: both;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137254902);
+    overflow: hidden;
+  } 
+
+  
+  .social-media {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1200;
+  
+    @media  (min-width: 1024px) {
+      left: auto;
+      bottom: auto;
+      top: 275px;
+      width: 52px;
+      z-index: 999;
+    }
+    @media  (max-width: $tab-landscape) {
+      // position: static;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    
+  
+    ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      @media  (min-width: 1024px) {
+        display: block;
+      }
+  
+      li {
+        padding: 0;
+        width: 100%;
+        display: flex;
+  
+        a {
+          margin: 0;
+          width: 100%;
+          height: 21px;
+          line-height: 1em;
+          font-size: 1em;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+          transition: none; 
+          
+          @media  (min-width: 1024px) {
+            display: block;
+            height: 52px;
+            width: 52px;
+          }
+  
+          &.facebook-icon {
+            background-image: url('../../images/tepezza/facebook-white.svg');
+            background-color: #4060A5;
+            background-size: 14px 27px;
+
+            &:hover {
+              background-color: #fff;
+              background-size: 44px 67px;
+            }
+            
+          }
+          &.twitter-icon {
+            background-image: url('../../images/tepezza/twitter-white.svg');
+            background-color: #00ABE3;
+            background-size: 25px 21px;
+
+            &:hover {
+              background-color: #fff;
+              background-size: 40px;
+            }
+            
+          }
+          &.email-icon {
+            background-image: url('../../images/tepezza/email-white.svg');
+            background-color: #333333;
+            background-size: 29px;
+
+            &:hover {
+              background-color: #fff;
+              background-size: 50px;
+            }
+          }
+  
+          span {
+            display: none;
+          }
+
+          @media  (max-width: $tab-landscape) {
+            &.facebook-icon {
+              background-size: 7px 15px;
+            }
+
+            &.twitter-icon {
+              background-size: 15px 12px;
+            }
+            &.email-icon {
+              background-size: 17px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+  

@@ -1,0 +1,67 @@
+.bg-gradient .text-image-wrapper{
+  .text-content {
+    h2{
+      color: #fff;
+    }
+    p{
+      color: #fff;
+    }
+  }
+}
+.text-image-wrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: reverse;
+  -ms-box-direction: reverse;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  font-family: "LatoWebRegular", sans-serif !important;
+
+  .text-content {
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      letter-spacing: 0.08px;
+      font-size: 26px;
+      @media  (max-width: $mobile) {
+        margin-bottom: 14px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      letter-spacing: 0.31px;
+      text-align: center;
+      line-height: 1.44;
+      padding-bottom: 23px;
+      margin-bottom: 0;
+
+      @media  (max-width: $mobile) {
+        padding: 0 16px 23px;
+      }
+    }
+  }
+
+  img {
+    margin: 0 auto;
+    padding: 34px 0;
+    width: 82px;
+
+    @media  (max-width: $mobile) {
+      width: 95px;
+    }
+  }
+
+  a {
+    display: none;
+  }
+}

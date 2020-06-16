@@ -1,0 +1,154 @@
+// Image Text CTA Multicolumn 
+.bg-gradient {
+  .img-txt-stacked.border-partial {
+    border-right: 1px solid #000000;
+    &:last-child {
+      border: none;
+    }
+
+    @media  (max-width: 1023px) {
+      border-right: none;
+      border-bottom: 1px solid #000000;
+    }
+
+    .txt-cta-wrap {
+      p {
+        a {
+          color: #fff;
+          font-size: 16px;
+          display: block;
+        }
+      }
+    }
+
+  }
+}
+
+.img-txt-stacked.border-partial {
+  .txt-cta-wrap {
+    padding: 10px 20px;
+  }
+}
+
+.img-txt-stacked {
+  display: block;
+  img {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
+
+  .txt-cta-wrap {
+    text-align: center;
+    display: block;
+
+    p {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.18px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+      display: block;
+      letter-spacing: 0.12px;
+    }
+  }
+
+  @media  (max-width: 1023px) {
+    padding:0 20px;
+    margin-bottom: 0;
+    img {
+      display: block !important;
+    }
+    &.border-partial{
+    	 @media  (max-width: 1023px) {
+		    padding: 20px;
+		    margin-bottom: 20px;
+		  }
+    }
+  }
+
+  @media  (max-width: 1023px) {
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .txt-cta-wrap {
+        margin-bottom: 0;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Image Text CTA Multicolumn - Split ( Side By Side )
+
+.img-txt-aside {
+  display: flex;
+  padding: 10px 25px 10px 35px;
+  border-right: 1px solid #979797;
+  align-items: center;
+
+  &:last-child {
+    border: none;
+  }
+
+  .txt-cta-wrap {
+    position: static;
+
+    p {
+      font-size: 18px;
+      margin: 0;
+      color: #555555;
+      text-align: left;
+      font-family: LatoWebRegular, sans-serif;
+    }
+  }
+
+  img {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  @media  (max-width: 1023px) {
+    padding: 20px 30px;
+    border-right: none;
+    /*border-bottom: 1px solid #979797;*/
+    align-items: flex-start;
+
+    img {
+      margin-right: 20px;
+      width: 44px;
+    }
+
+    .txt-cta-wrap {
+      p {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media  (min-width: 62.5em){
+    .txt-cta-wrap{
+      flex: 1;    
+    }
+  }
+}
+

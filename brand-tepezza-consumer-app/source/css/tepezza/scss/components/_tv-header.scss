@@ -1,0 +1,39 @@
+.hz-header-wrap {
+  .tv-header {
+    padding-top: 15px;
+    border-bottom: 1px solid #AAA9A9;
+
+    @media (max-width: 1023px) {
+    padding: 15px;
+    padding-left: 0;
+    padding-right: 10px;
+    }
+
+    .bottom-container {
+      border-top: 0;
+      border-bottom: 0;
+      padding-bottom: 20px;
+    }
+
+    ul.connect {
+      padding-left: 60px;
+      padding-top: 50px;
+
+      li a {
+        font-size: 18px;
+      }
+    }
+
+    .top-container {
+      @media (max-width: 1023px) {
+        padding-left: 0;
+      }
+
+      .logo {
+        @media (max-width: 1023px) {
+          margin-left: 10px
+        }
+      }
+    }
+  }
+}

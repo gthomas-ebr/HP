@@ -1,0 +1,111 @@
+.hz-footer-wrapper{
+	background-color: #fff;
+	box-shadow: none;
+	padding:17px 0;
+		@media  (max-width: $mobile){
+			margin-top: 0;
+			padding-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	.hz-footer{
+		.footer-top{
+			flex-direction: row;
+			.footer-logo{
+				> a{
+					img{
+						width: auto;
+						margin: 0 0 20px;
+						@media  (max-width: $mobile){
+							margin: 30px auto 25px;
+						}
+					}
+				}
+			}
+			.footer-nav{
+				ul {
+				    float: right;
+					li{
+						padding: 0 20px;
+						border: none;
+						position: relative;
+						display: inline-block;
+						a{
+							font-family: "LatoWebRegular", sans-serif;
+							font-size: 14px;
+							font-weight: normal;
+							color: #696969;
+						}
+						@media  (max-width: $mobile){
+							margin-bottom: 15px;
+							margin-left: 0 !important;
+							margin-right: 0 !important;
+							display: block;
+
+							&:nth-child(even){
+								&:after{
+									content: '';
+							    	background: #fff;
+								}
+							}
+							
+						}
+						@media  (max-width: $mobile){
+							&:nth-child(3){
+								margin-left: -13px;
+							}
+						}
+						&:last-of-type{
+							&:after{
+								content: '';
+						    	background: #fff;
+							}
+						}
+						&:after{
+							content: '';
+						    background: #676767;
+						    position: absolute;
+						    height: 15px;
+						    top: 5px;
+						    right: 0;
+						    width: 1.2px;
+						}
+					}
+					@media  (max-width: $mobile){
+						float: none;
+						li{
+							&:after{
+								visibility: hidden;
+							}
+						}
+					}
+					@media  (max-width:$mobile){
+				      	float: none;
+				      	text-align: center;
+				      	column-count: 1;
+				      	max-width: 75%;
+				      	margin: 0 auto;
+			      	}
+					@media (max-width: 380px){
+						max-width: 95%;
+					}
+				}
+			}
+			@media  (max-width: $mobile){
+				flex-direction:column;
+			}
+		}
+		.footer-content{
+			text-align: center;
+			p{
+				font-size: 12px !important;
+				line-height: 21px;
+				display: inline;
+				@media  (max-width: $mobile){
+					font-size: 10px !important;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+

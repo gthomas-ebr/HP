@@ -1,0 +1,106 @@
+{{#commonHeaderFooterData}}
+  <section class="hz-header-wrap">
+    <div class="gout-box grey-bg visible-mobile">
+      <p>A Gout Nurse Advocate can answer<br> your questions. <a href="tel:0">Call 833-4MY-GOUT</a></p>
+    </div>
+    <div class="container-full">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Header starts -->
+          {{#header}}
+            <div class="header">
+              <div class="wrapper">
+                <div class="top-container">
+                  <a href="#" class="icon-home visible-mobile">
+                    <img src="../../images/krystexxa/icon-home.svg" alt="">
+                  </a>
+                  <div class="logo-wrapper">
+                    <div class="logo">
+                      <a href="#" class="logo-container">
+                        {{>starterkit-atoms-logo}}
+                      </a>
+                    </div>
+                  </div>
+                  <div class="top-nav-links visible-desktop">
+                    {{>starterkit-molecules-top-navigation}}
+                  </div>
+                  <div class="gout-box grey-bg visible-desktop">
+                    <p>A Gout Nurse Advocate can <br>answer your questions.<br> <a href="tel:0">Call 833-469-4688</a></p>
+                  </div>
+                </div>
+                <div class="bottom-container">
+                  <div class="nav-wrapper">
+                    <div class="hamburger visible-mobile">
+                      <div class="menuIcon">
+                      </div>
+                    </div>
+                    <div class="menu-wrapper">
+                      <div class="nav-bar">
+                        <a href="#" class="active icon-home visible-desktop">
+                          <img src="../../images/krystexxa/icon-home.svg" alt="">
+                        </a>
+                        {{>starterkit-molecules-main-navigation}}
+                        <div class="top-nav-links visible-mobile">
+                          {{>starterkit-molecules-top-navigation}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col search">
+                      <span class="search-toggle"></span>
+                      <div class="search-inner">
+                        <div class="search-field">
+                          {{>starterkit-molecules-header-search}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/header}}
+          <!-- Header ends -->
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}
+{{>starterkit-molecules-text-banner-withimage}}
+<section class="padding-large">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{#quizWrapper}}
+          <div class="quiz-wrapper" id="{{quizId}}">
+            {{#titleWrapper}}
+              {{>starterkit-atoms-headings}}
+            {{/titleWrapper}}
+            <div class="question-wrapper" data-qno={{questionNo}}>
+              {{>starterkit-atoms-headings}}
+              {{#radioBtnWrapper}}
+                <label class="">
+                  <input type="radio" name="{{questionNo}}" value="{{answerId}}">
+                  <p><span class="checkmark">{{radioText}}</span></p>
+                </label>
+              {{/radioBtnWrapper}}
+            </div>
+            {{#button}}
+              <a href="{{buttonURL}}" class="{{buttonClass}}" data-url-1="{{yesUrl}}" data-url-2="{{noUrl}}">{{{buttonText}}} </a>
+            {{/button}}
+          </div>
+        {{/quizWrapper}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{#commonHeaderFooterData}}
+  <section class="hz-footer-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{>starterkit-organisms-footer-generic}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/commonHeaderFooterData}}

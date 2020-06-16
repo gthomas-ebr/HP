@@ -1,0 +1,12 @@
+.content-section {
+	ul {
+		list-style: none;
+	}
+	.content-wrapper {
+		display: flex;
+		border-bottom: 1px solid #ddd;
+		.bold-text {
+			font-weight: bold;
+		}
+	}
+}

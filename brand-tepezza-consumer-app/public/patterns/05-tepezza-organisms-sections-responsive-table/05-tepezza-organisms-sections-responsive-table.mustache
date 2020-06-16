@@ -1,0 +1,29 @@
+{{#resposiveDiseaseTable}}
+  <table class="classroom-table {{tableClass}}">
+    <thead>
+      <tr>
+        {{#tableHeader}}
+          <th>{{{tableHeading}}}</th>
+        {{/tableHeader}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#tableBody}}
+        <tr class="{{rowClass}}">
+          {{#bodyColumns}}
+            <td colspan="{{colspan}}" data-label="{{labelHeading}}">
+              <p>
+                {{#bodyContent}}
+                  {{>starterkit-atoms-images}}
+                  {{{bodyTxt}}}
+                  {{>starterkit-atoms-list}}
+                  {{>starterkit-atoms-links}}
+                {{/bodyContent}}
+              </p>
+            </td>
+          {{/bodyColumns}}
+        </tr>
+      {{/tableBody}}
+    </tbody>
+  </table>
+{{/resposiveDiseaseTable}}

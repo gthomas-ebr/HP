@@ -1,0 +1,76 @@
+<section>
+  <div class="container">
+    {{#pamFormNew}}
+      <div class="{{PamFormClass}}">
+        <div class="caption">
+        </div>
+        <form action="{{formAction}}" novalidate="novalidate" id="pamForm" class="formregistration" method="post">
+          <div class="form-wrapper">
+
+            {{#checkOne}}
+              {{>starterkit-atoms-paragraph}}
+              <fieldset class="radio-button-wrap">
+                {{#radioButtonList}}
+                  {{>starterkit-atoms-radio-button}}
+                {{/radioButtonList}}
+              </fieldset>
+            {{/checkOne}}
+
+            {{#inputFirstName}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/inputFirstName}}
+            {{#inputLastName}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/inputLastName}}
+            {{#inputEmailAddress}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/inputEmailAddress}}
+            {{#confirmEmailInput}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/confirmEmailInput}}
+            {{#inputZipCode}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/inputZipCode}}
+            {{#inputPhoneNumber}}
+              {{>starterkit-molecules-input-with-label}}
+            {{/inputPhoneNumber}}
+
+
+
+            {{#checkTwo}}
+              {{>starterkit-atoms-paragraph}}
+              <fieldset class="radio-button-wrap">
+                {{#radioButtonList}}
+                  {{>starterkit-atoms-radio-button}}
+                {{/radioButtonList}}
+              </fieldset>
+            {{/checkTwo}}
+          </div>
+
+          {{#termsConditions}}
+            {{>starterkit-atoms-paragraph}}
+          {{/termsConditions}}
+          {{#termCheckbox}}
+            <div class="radio-button-wrap terms-checkbox">
+              {{#radioField}}
+                <span class="field-validation-valid" data-valmsg-for="{{radioForID}}" data-valmsg-replace="true"></span>
+                <div class="form-check {{radioButtonClass}}">
+                  <input {{#attributes}} {{ name }}="{{ value }}" {{/attributes}} {{#required }} data-val-required="{{ errorMessage }}" {{/required }}>
+                  <label for="Terms">{{{radioTxt}}}</label>
+                </div>
+              {{/radioField}}
+            </div>
+          {{/termCheckbox}}
+
+          <div class="privacy-note">
+            {{#formNote}}
+              {{>starterkit-atoms-paragraph}}
+            {{/formNote}}
+          </div>
+
+          <button type="submit" class="{{buttonClass}}">Sign up</button>
+        </form>
+      </div>
+    {{/pamFormNew}}
+  </div>
+</section>

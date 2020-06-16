@@ -1,0 +1,148 @@
+<section>
+  <div class="container">
+    <div class="pam-form">
+      <div class="caption">
+        <h3 class="">Tell us about you </h3>
+
+      </div>
+      <form action="" novalidate="novalidate" id="pamForm" method="post">
+        <div class="form-wrapper">
+          <div class="form-group">
+            <label for="fname" class="">First Name</label>
+            <div class="">
+              <input id="fname" name="fname" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="fname" data-val-length-max="35" data-val-required="Please enter a first name.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="fname" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="lname" class="">Last Name</label>
+            <div class="">
+              <input id="lname" name="lname" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="lname" data-val-length-max="35" data-val-required="Please enter a last name.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="lname" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="">Email</label>
+            <div class="">
+              <input id="email" name="email" autoComplete="off" class="form-control" data-val="true" type="email" data-val-length-min="2" data-val-length="email" data-val-length-max="35" data-val-required="Please enter a correct formatted email.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="Phone" class="">Phone Number</label>
+            <div class="">
+              <input id="Phone" name="Phone" autoComplete="off" class="form-control" data-val="true" type="tel" data-val-regex-pattern="^((\d{3}?)|(\d{3}))?\d{3}\d{4}$" data-val-length-min="10" data-val-length="Please enter a valid phone number." data-val-length-max="10" maxlength="10" placeholder="" data-val-required="Please enter a phone number.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+            <label for="Zip" class="">Zip Code</label>
+            <div class="">
+              <input id="Zip" name="Zip" autoComplete="off" class="form-control" data-val="true" data-val-regex-pattern="^(\d{5})?$" maxlength="5" type="tel" data-val-length-min="5" data-val-length="" data-val-length-max="5" data-val-required="Please enter your ZIP code.">
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Zip" data-valmsg-replace="true"></span>
+          </div>
+          <p class="label-parent">Which statement best describes you?</p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="UserJourney" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserJourney" name="UserJourney" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Prospect" data-val-required="">
+              <label class="form-check-label " for="">Prescribed KRYSTEXXA and ready to start or just starting treatment</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="UserJourney" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserJourney2" name="UserJourney" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Patient" data-val-required="">
+              <label class="form-check-label " for="">Currently being treated or have previously been treated with KRYSTEXXA</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="UserJourney" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserJourney3" name="UserJourney" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Other" data-val-required="A selection is required.">
+              <label class="form-check-label " for="">Interested in learning more about KRYSTEXXA</label>
+            </div>
+          </fieldset>
+          <div class="check-hide select-one">
+            <fieldset class="radio-button-wrap">
+              <span class="field-validation-valid" data-valmsg-for="isPatient" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="isPatient" name="isPatient" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Patient" data-val-required="">
+                <label class="form-check-label " for="">I am a patient</label>
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="isPatient" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="isPatient" name="isPatient" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver" data-val-required="">
+                <label class="form-check-label " for="">I am a caregiver</label>
+              </div>
+            </fieldset>
+          </div>
+          <p class="label-parent">What type of Peer Mentor would be most helpful to talk to?</p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="UserType" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserType" name="UserType" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Patient" data-val-required="">
+              <label class="form-check-label " for="">Somone who is currently taking KRYSTEXXA</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="UserType" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserType" name="UserType" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver" data-val-required="">
+              <label class="form-check-label " for="">Someone who has completed treatment</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="UserType" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="UserType" name="UserType" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver" data-val-required="A selection is required.">
+              <label class="form-check-label " for="">The spouse of someone who has been on KRYSTEXXA</label>
+            </div>
+          </fieldset>
+        </div>
+        <h3 class="optional">Your Peer Mentor preferences (optional): </h3>
+
+        <div class="form-wrapper">
+          <p class="label-parent">Would you prefer to talk to a man or woman?</p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="PreferTalk" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="PreferTalk" name="PreferTalk" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Patient">
+              <label class="form-check-label " for="">Man</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="PreferTalk" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="PreferTalk" name="PreferTalk" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver">
+              <label class="form-check-label " for="">Woman</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="PreferTalk" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="PreferTalk" name="PreferTalk" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="is-caregiver">
+              <label class="form-check-label " for="">No Preference</label>
+            </div>
+          </fieldset>
+          <p class="label-parent">What you prefer to talk to someone older or younger than 50 years of age?</p>
+          <fieldset class="radio-button-wrap">
+            <span class="field-validation-valid" data-valmsg-for="Age" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Age" name="Age" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Patient">
+              <label class="form-check-label " for="">Younger (under 50 years of age)</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Age" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Age" name="Age" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver">
+              <label class="form-check-label " for="">50 (years of age or older)</label>
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Age" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Age" name="Age" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Caregiver">
+              <label class="form-check-label " for="">No Preference</label>
+            </div>
+          </fieldset>
+        </div>
+        <p class="termsConditions"><span>Privacy Notice and Consent:</span> I understand I am giving Horizon, its affiliates, and business partners permission to use the personal information provided in this registration form, as described in this authorization. I understand that the information I am providing may be used by Horizon Pharma to provide me with health and product information and related services concerning health conditions and treatments. By submitting this form, I consent to these uses and am confirming that I have read and agree to the Horizon Pharma <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy.</a> I understand that Horizon and its contracted third parties will NOT sell or rent personal information, and that the information provided in this form will be used in accordance with the Horizon Pharma <a href="#">Privacy Policy.</a> I understand I can cancel this authorization and opt out of Horizon program(s) at any time. I agree that this authorization will expire ten (10) years from the date submitted, or until my participation in the program ends through my cancellation. I acknowledge that I am submitting this form voluntarily, and that I am at least 18 years of age.</p>
+        <div class="radio-button-wrap terms-checkbox">
+          <span class="field-validation-valid" data-valmsg-for="Terms" data-valmsg-replace="true"></span>
+          <div class="form-check ">
+            <input id="Terms" name="Terms" autoComplete="off" class="form-check-input" data-val="true" type="checkbox" data-val-range="Please check box to continue." data-val-range-min="True" data-val-range-max="True" value="true" data-val-required="Please check box to continue.">
+            <label for="Terms"><strong>I Accept</strong></label>
+          </div>
+        </div>
+        <button type="submit" class="cta-btn form-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>

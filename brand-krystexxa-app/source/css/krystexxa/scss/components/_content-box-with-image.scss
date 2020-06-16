@@ -1,0 +1,84 @@
+.content-box{
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	box-shadow: none;
+}
+.bg-gradient .content-box-with-image{
+	h2, p{
+		color: #ffffff;
+	}
+	ul{
+		li{
+			color: #fff;
+			&:before{
+				border-color:#fff;
+			}
+		}
+	}
+	a{
+		color: #fff;
+	}
+}
+.content-box-with-image{
+	img{
+		max-width: 80px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		display: block;
+		@media  (max-width: $mobile){
+			max-width: 97px;
+		}
+	}
+	h2, p{
+		text-align: center;
+				font-family: 'LatoWebRegular';
+	}
+	h2{
+		text-transform: uppercase;
+		// margin-bottom: 20px; 
+		// Commented Because its affecting for "PROVEN RESULTS" in How KXX Works
+		margin-bottom: 0px;
+	}
+	p{
+		font-size: 20px;
+		line-height: 28px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		@media (max-width: $tablet){
+			width: 100%;
+		}
+	}
+	ul{
+		counter-reset: partCounter;
+		list-style: none;
+		width: 83%;
+		margin: 0 auto;
+		li{
+			counter-increment:partCounter;
+			list-style:none;
+		    margin-bottom: 20px;
+		    padding-left: 65px;
+		    font-size: 20px;
+		    line-height: 26px;
+		    letter-spacing: 0.35px;
+		    position: relative;
+
+			&:before{
+				content:counter(partCounter);
+				border: 1px solid;
+				border-radius: 50%;
+				position: absolute;
+			    left: 0px;
+			    margin-left: 0;
+			    padding: 8.7px 15.53px;
+			    margin-top: 5px;
+			}
+		}
+		@media  (max-width: $tablet){
+			width: 100%;
+		}
+	}
+}

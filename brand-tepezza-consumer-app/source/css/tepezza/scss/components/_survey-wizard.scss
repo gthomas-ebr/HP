@@ -1,0 +1,287 @@
+.survey-wizard {
+	margin-bottom: 25px;
+	@media (max-width: $mobile){
+		margin-bottom: 10px;
+	}
+	.sv_main {
+
+		.sv_p_root > .sv_row {
+			border: none;
+		}
+
+		.sv_body {
+			padding: 0;
+			border-top:none;
+			margin-bottom: 10px;
+
+			.sv_page_title h2 {
+				font-size: 35px;
+				color: #005133;
+				font-weight: bold;
+				font-size: 35px;
+				line-height: 45px;
+				margin-top: 10px;
+			}
+			@media (max-width: $mobile) {
+
+				.sv_page_title h2 {
+					font-size: 22px;
+					line-height: 30px;
+				}
+			}
+		}
+
+		.sv_body, .sv_custom_header, .sv_p_root > .sv_row:nth-child(odd) {
+			background-color: transparent;
+		}
+
+		.sv_container .sv_body .sv_p_root .sv_q {
+			padding: 0;
+		}
+
+		.sv_q_title span {
+			display: block;
+			margin: 30px 0;
+
+			&:nth-child(1), &:nth-child(2) {
+				display: none;
+			}
+
+			h4 {
+				margin: 0;
+			}
+		}
+		.sv_q_a {
+			.buttongroup {
+				button {
+					display: block;
+				    background-color: transparent;
+				    text-align: left;
+				    font-size: 22px;
+				    line-height: 29px;
+				    color: #000000;
+				    font-weight: 500;
+				    position: relative;
+				    padding: 13px 0px 13px 80px;
+				    margin-bottom: 20px;
+				    outline: none;
+
+				    &:before {
+				    	content: "";
+						display: inline-block;
+						position: absolute;
+						left: 0px;
+						top: 0;
+						width: 55px;
+						height: 55px;
+						border: 4px solid #A5CF4F;
+						border-radius: 6px;
+						background-color: transparent;
+				    }
+
+				    &.selected {
+					    &:before {
+					    	background-color: #005133;
+					    }
+
+					    &:after {
+						    content: '';
+						    position: absolute;
+						    left: 20px;
+						    top: 10px;
+						    width: 14px;
+						    height: 25px;
+						    border: solid #fff;
+						    border-width: 0 4px 4px 0;
+						    -webkit-transform: rotate(45deg);
+						    -ms-transform: rotate(45deg);
+						    transform: rotate(45deg);
+						}
+					}
+
+					&[data-value="Yes"], &[data-value="No"] {
+						&:before {
+						    border-radius: 50%;
+						    background: transparent;
+						}
+
+						&.selected {
+
+							&:after {
+							    background: #005133;
+							    height: 39.5px;
+							    width: 39.5px;
+							    border-radius: 50%;
+							    border: none;
+							    left: 8px;
+							    top: 7px;
+							}
+						}
+					}
+				}
+
+				@media (max-width: $mobile) {
+					button {
+						line-height: 28px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		.sv_nav {
+
+
+			input {
+				display: none;
+			}
+
+			button {
+			    float: none !important;
+			    font-size: 20px;
+			    font-weight: bold;
+			    color: #000000;
+			    background-color: #A5CF4F;
+			    padding: 9px;
+			    width: 100%;
+			    border-radius: 23px;
+			    max-width: 232px;
+			    border: none;
+			    line-height: 27px;
+			}
+		}
+
+	}
+}
+
+
+.sv_main .sv_container .sv_body.sv_completed_page {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+
+    h4 {
+	    margin: 30px 0;
+	}
+
+	h2 {
+	    font-weight: 700;
+	}
+
+	@media (max-width: $mobile) {
+		h4 {
+		    margin: 20px 0;
+		}
+
+	}
+
+}
+
+.sv_main .sv_container .sv_body .sv_p_root .sv_q .sv_q_erbox:not([style*="display: none"]):not([style*="display:none"]) {
+    font-style: normal !important;
+}
+
+
+
+/* Survey Wizard Checkboxes */
+.sv_main .sv_container .sv_body .sv_p_root h4.sv_page_title { margin-bottom: 22px; }
+.sv_main .sv_container .sv_body .sv_p_root .sv_page_title h3 { margin-bottom: 0; }
+.survey-wizard .sv_main .sv_q_title span { margin-top: 0; }
+.survey-wizard .sv_main .sv_q_title span h4 + h4 { margin-top: 6px; }
+.survey-wizard .sv_main .sv_nav button:focus {
+    outline: none;
+}
+.survey-wizard .sv_main .sv_nav button:hover {
+    color: #F5F5F5;
+    background-color: #005133;
+    text-decoration: none;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox,
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup  {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox > label,
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup > label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox > label input[type=checkbox],
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup > label input[type=radio] {
+    display: none;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox span.checkbox-material,
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup span.circle{
+    border: 4px solid #A5CF4F;
+    border-radius: 6px;
+    width: 55px;
+    min-width: 55px;
+    height: 55px;
+    position: relative;
+    margin-right: 25px;
+} 
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup span.circle {
+    border-radius: 50%;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox.checked span.checkbox-material {
+    border-color: #005133;
+    background-color: #005133;
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_checkbox.checked span.checkbox-material:after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 8px;
+    width: 14px;
+    height: 25px;
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.survey-wizard .sv_main .sv_q_a .sv_q_radiogroup.checked span.circle:after {
+    content: '';
+    position: absolute;
+    background: #005133;
+    height: 39.5px;
+    width: 39.5px;
+    border-radius: 50%;
+    border: none;
+    left: 4px;
+    top: 3px;
+}
+.sv_main .sv_container .sv_body.sv_completed_page > h3 { font-size: 35px; line-height: 45px;}
+@media (max-width: $tab-landscape) {
+.sv_main .sv_container .sv_body.sv_completed_page > h3 { font-size: 32px; line-height: 42px;}
+}
+@media (max-width: $mobile) {
+.sv_main .sv_container .sv_body.sv_completed_page > h3 { font-size: 22px; line-height: 30px;}
+}
+.sv_main .sv_container .sv_body.sv_completed_page { padding: 0; margin-bottom: 24px;}
+.sv_main .sv_container .sv_body.sv_completed_page h4 {  margin: 10px 0; }
+/* Survey Wizard Checkboxes END */
+
+.survey-wizard .sv_main .sv_body .sv_page_title h2 {
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+
+.sv_main .sv_q_erbox:not([style*="display: none"]):not([style*="display:none"]) {
+  border: none;
+  background: none;
+  color: #b70000;
+  font-size: 20px;
+  font-family: "TiresiasPCfont";
+  font-style: italic;
+}
+
+.sv_main .sv_container .sv_body .sv_p_root .sv_q .sv_q_erbox:not([style*="display: none"]):not([style*="display:none"]) {
+  margin: 0;
+  padding: 1em 0;
+}

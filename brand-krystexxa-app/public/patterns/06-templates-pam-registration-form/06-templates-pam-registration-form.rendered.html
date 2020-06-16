@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="" lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Facebook Share Meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit">
+  <meta property="og:title" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/starterkit/style.css?1592286429690" media="all" />
+  <link rel="stylesheet" href="../../css/starterkit/pattern-scaffolding.css?1592286429690" media="all" />
+  <link rel="stylesheet" href="../../css/starterkit/fonts.css?1592286429690" media="all" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="../../css/krystexxa/fonts.css?1592286429690" media="all" />
+  <link rel="stylesheet" href="../../css/krystexxa/bootstrap-slider.css?1592286429690" media="all" />
+
+  <link rel="stylesheet" href="../../css/krystexxa/style.css?1592286429690" media="all" />
+
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  <!-- never cache patterns -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1592286429690" media="all">
+  <link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1592286429690" media="all" />
+
+  <!-- End Pattern Lab -->
+  <script type="text/javascript" src="../../js/starterkit/modernizr.min.js"></script>
+</head>
+
+<body class="">
+
+
+  <section>
+    <div class="container">
+      <div class="pam-form pam-form-reg">
+        <div class="caption">
+        </div>
+        <form action="" novalidate="novalidate" id="pamForm" class="formregistration" method="post">
+          <div class="form-wrapper">
+
+            <p class="label-parent">Has your doctor recommended KRYSTEXXA? <span>(Optional)</span></p>
+            <fieldset class="radio-button-wrap">
+              <span class="field-validation-valid" data-valmsg-for="DoctorRecommendation" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="DoctorRecommendationYes" name="DoctorRecommendation" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="true">
+                <label class="form-check-label " for="DoctorRecommendationYes">Yes</label>
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="DoctorRecommendation" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="DoctorRecommendationNo" name="DoctorRecommendation" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="false">
+                <label class="form-check-label " for="DoctorRecommendationNo">No</label>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="fname" class="">First Name</label>
+              <div class="">
+                <input id="fname" name="FirstName" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="fname" data-val-length-max="35" data-val-required="Please enter a first name.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname" class="">Last Name</label>
+              <div class="">
+                <input id="lname" name="LastName" autoComplete="off" class="form-control" data-val="true" type="text" data-val-length-min="2" data-val-length="lname" data-val-length-max="35" data-val-required="Please enter a last name.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="">Email</label>
+              <div class="">
+                <input id="email" name="Email" autoComplete="off" class="form-control" data-val="true" type="email" data-val-length-min="2" data-val-length="email" data-val-length-max="35" data-val-required="Please enter a correctly formatted email.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+              <label for="emailconf" class="ConfirmEmail">Confirm Email</label>
+              <div class="">
+                <input id="emailconf" name="ConfirmEmail" autoComplete="off" class="form-control" data-val="true" type="email" data-val-length-min="2" data-val-length="The email fields do not match." data-val-email="The email fields do not match." data-val-length-max="35" data-val-equalto="The email fields do not match." ga-tag="input" data-val-equalto-other="*.Email" data-val-required="The email fields do not match.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+              <label for="Zip" class="">Zip Code</label>
+              <div class="">
+                <input id="Zip" name="Zip" autoComplete="off" class="form-control" data-val="true" data-val-regex-pattern="^(\d{5})?$" maxlength="5" type="tel" data-val-length-min="5" data-val-length="Please enter a 5-digit ZIP Code." data-val-length-max="5" data-val-required="Please enter a 5-digit ZIP Code.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="Zip" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+              <label for="Phone" class="">Phone Number</label>
+              <div class="">
+                <input class="form-control" id="Phone" name="Phone" autoComplete="off" data-val="true" type="tel" placeholder="(XXX)-XXX-XXXX" data-val-regex-pattern="^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$" data-val-regex="Please enter a valid phone number." data-val-required="Please enter a 10-digit phone number.">
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+            </div>
+
+
+
+            <p class="label-parent">Best time of day to be reached:</p>
+            <fieldset class="radio-button-wrap">
+              <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="Morning" name="CallTimePreference" autoComplete="off" class="form-check-input is-patient" data-val="true" type="radio" value="Morning" data-val-required="">
+                <label class="form-check-label " for="Morning">Morning</label>
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="Afternoon" name="CallTimePreference" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Afternoon" data-val-required="">
+                <label class="form-check-label " for="Afternoon">Afternoon</label>
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="CallTimePreference" data-valmsg-replace="true"></span>
+              <div class="form-check ">
+                <input id="Evening" name="CallTimePreference" autoComplete="off" class="form-check-input is-caregiver" data-val="true" type="radio" value="Evening" data-val-required="A selection is required.">
+                <label class="form-check-label " for="Evening">Evening</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <p class="termsConditions"><span>Privacy Notice and Consent:</span> I understand I am giving Horizon, its affiliates, and business partners permission to use the personal information provided in this registration form, as described in this authorization. I understand that the information I am providing may be used by Horizon Pharma to provide me with health and product information and related services concerning health conditions and treatments. By submitting this form, I consent to these uses and am confirming that I have read and agree to the Horizon Pharma <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy.</a> I understand that Horizon and its contracted third parties will NOT sell or rent personal information, and that the information provided in this form will be used in accordance with the Horizon Pharma <a href="#">Privacy Policy.</a> I understand I can cancel this authorization and opt out of Horizon program(s) at any time. I agree that this authorization will expire ten (10) years from the date submitted, or until my participation in the program ends through my cancellation. I acknowledge that I am submitting this form voluntarily, and that I am at least 18 years of age.</p>
+          <div class="radio-button-wrap terms-checkbox">
+            <span class="field-validation-valid" data-valmsg-for="Terms" data-valmsg-replace="true"></span>
+            <div class="form-check ">
+              <input id="Terms" name="Terms" autoComplete="off" class="form-check-input" data-val="true" type="checkbox" data-val-range="Please check box to continue." data-val-range-min="True" data-val-range-max="True" value="true" data-val-required="Please check box to continue.">
+              <label for="Terms"><strong>I accept</strong></label>
+            </div>
+          </div>
+
+          <div class="privacy-note">
+            <p class="">The Gout Nurse Advocate Program is a Horizon Therapeutics-sponsored patient support program that provides educational disease state information and resources about uncontrolled gout and KRYSTEXXA. By registering today, you will be provided with gout-related support, access to Patient Access Manager services (if applicable), and communications via phone, text message, and/or email.</p>
+          </div>
+
+          <button type="submit" class="cta-btn form-submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+    {
+      "cssEnabled": false,
+      "patternLineageExists": true,
+      "patternLineages": [{
+        "lineagePattern": "starterkit-atoms-paragraph",
+        "lineagePath": "../../patterns/00-starterkit-atoms-text-paragraph\\00-starterkit-atoms-text-paragraph.rendered.html",
+        "lineageState": "complete"
+      }, {
+        "lineagePattern": "starterkit-atoms-radio-button",
+        "lineagePath": "../../patterns/00-starterkit-atoms-forms-radio-button\\00-starterkit-atoms-forms-radio-button.rendered.html",
+        "lineageState": "complete"
+      }, {
+        "lineagePattern": "starterkit-molecules-input-with-label",
+        "lineagePath": "../../patterns/01-starterkit-molecules-sections-input-with-label\\01-starterkit-molecules-sections-input-with-label.rendered.html",
+        "lineageState": "complete"
+      }],
+      "lineage": [{
+        "lineagePattern": "starterkit-atoms-paragraph",
+        "lineagePath": "../../patterns/00-starterkit-atoms-text-paragraph\\00-starterkit-atoms-text-paragraph.rendered.html",
+        "lineageState": "complete"
+      }, {
+        "lineagePattern": "starterkit-atoms-radio-button",
+        "lineagePath": "../../patterns/00-starterkit-atoms-forms-radio-button\\00-starterkit-atoms-forms-radio-button.rendered.html",
+        "lineageState": "complete"
+      }, {
+        "lineagePattern": "starterkit-molecules-input-with-label",
+        "lineagePath": "../../patterns/01-starterkit-molecules-sections-input-with-label\\01-starterkit-molecules-sections-input-with-label.rendered.html",
+        "lineageState": "complete"
+      }],
+      "patternLineageRExists": true,
+      "patternLineagesR": [{
+        "lineagePattern": "pages-pam-registration-form-page",
+        "lineagePath": "../../patterns/07-pages-pam-registration-form-page\\07-pages-pam-registration-form-page.rendered.html"
+      }],
+      "lineageR": [{
+        "lineagePattern": "pages-pam-registration-form-page",
+        "lineagePath": "../../patterns/07-pages-pam-registration-form-page\\07-pages-pam-registration-form-page.rendered.html"
+      }],
+      "patternLineageEExists": true,
+      "patternDesc": "<p>Pam Registration Form page Template</p>\n",
+      "patternBreadcrumb": {
+        "patternType": "templates"
+      },
+      "patternExtension": "mustache",
+      "patternName": "Pam Registration Form",
+      "patternPartial": "templates-pam-registration-form",
+      "patternState": "complete",
+      "patternEngineName": "mustache",
+      "extraOutput": {}
+    }
+  </script>
+
+  <script>
+    /*!
+     * scriptLoader - v0.1
+     *
+     * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+     * Licensed under the MIT license
+     *
+     */
+
+    var scriptLoader = {
+
+      run: function(js, cb, target) {
+        var s = document.getElementById(target + '-' + cb);
+        for (var i = 0; i < js.length; i++) {
+          var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+          var c = document.createElement('script');
+          c.src = '../../' + src + '?' + cb;
+          if (typeof js[i] != 'string') {
+            if (js[i].dep !== undefined) {
+              c.onload = function(dep, cb, target) {
+                return function() {
+                  scriptLoader.run(dep, cb, target);
+                }
+              }(js[i].dep, cb, target);
+            }
+          }
+          s.parentNode.insertBefore(c, s);
+        }
+      }
+
+    }
+  </script>
+
+  <script id="pl-js-polyfill-insert-1592286429690">
+    (function() {
+      if (self != top) {
+        var cb = '1592286429690';
+        var js = [];
+        if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+          js.push('styleguide/bower_components/classList.min.js');
+        }
+        scriptLoader.run(js, cb, 'pl-js-polyfill-insert');
+      }
+    })();
+  </script>
+
+  <script id="pl-js-insert-1592286429690">
+    (function() {
+      if (self != top) {
+        var cb = '1592286429690';
+        var js = [{
+          'src': 'styleguide/bower_components/jwerty.min.js',
+          'dep': ['styleguide/js/patternlab-pattern.min.js']
+        }];
+        scriptLoader.run(js, cb, 'pl-js-insert');
+      }
+    })();
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+  <script type="text/javascript" src="../../js/starterkit/validations.js"></script>
+  <script type="text/javascript" src="../../js/starterkit/master-custom-scripts.js"></script>
+  <script type="text/javascript" src="../../js/starterkit/video.js"></script>
+  <script type="text/javascript" src="../../js/krystexxa/validations.js"></script>
+  <script type="text/javascript" src="../../js/krystexxa/custom-scripts.js"></script>
+  <script type="text/javascript" src="../../js/krystexxa/text-carousel.js"></script>
+  <script type="text/javascript" src="../../js/krystexxa/bootstrap-slider.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfyOzIQD1F6hJ2UVQ6Vzett_M16O1sZbA"></script>
+  <script src="//cdn.rawgit.com/googlemaps/v3-utility-library/master/markerwithlabel/src/markerwithlabel.js"></script>
+  <script type="text/javascript" src="../../js/krystexxa/specialist-finder.js"></script>
+</body>
+
+</html>

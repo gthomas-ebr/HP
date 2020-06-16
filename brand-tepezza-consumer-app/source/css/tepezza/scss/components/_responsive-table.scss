@@ -1,0 +1,318 @@
+table.classroom-table {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-spacing: 1px !important;
+  margin: 0;
+  position: relative;
+
+  th {
+    padding: 8px 0px;
+  }
+
+  tr {
+    td {
+      width: 40%;
+      padding: 20px 0px 30px 0;
+
+      &:first-child {
+        padding-right: 25px;
+        width: 30%;
+
+        @media (max-width: $tab-landscape) {
+          width: 100%;
+          padding: 15px 5px 10px 4px;
+        }
+      }
+
+      &:last-child {
+        width: 30%;
+
+        @media (max-width: $tab-landscape) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: $tab-landscape) {
+        width: 100%;
+        padding: 10px 5px 10px 150px;
+
+        &:before {
+          text-transform: none;
+        }
+      }
+    }
+
+    @media (max-width: $tab-landscape) {
+      padding: 0px;
+      margin-bottom: 0;
+    }
+  }
+
+  thead {
+    tr {
+      border-bottom: none;
+      background: #005133;
+
+      th {
+        background: #005133;
+        color: #fff;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: transparent;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        // background: #f5f5f5 linear-gradient(45deg, #53d4d1 0%, #a5cf4f 100%) 100% bottom no-repeat;
+        // background-size: 100% 3px;
+        width: 100%;
+
+        &:after {
+          height: 3px;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          background: #1e5799;
+          background: -moz-linear-gradient(left, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+          background: -webkit-linear-gradient(left, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+          background: linear-gradient(to right, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#a5cf4f', GradientType=1);
+          background-size: 100% 3px;
+          content: "";
+        }
+      }
+
+      @media (max-width: $tab-landscape) {
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          // background: #f5f5f5 linear-gradient(45deg, #53d4d1 0%, #a5cf4f 100%) 100% bottom no-repeat;
+          // background-size: 100% 3px;
+          width: 100%;
+
+          &:after {
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #1e5799;
+            background: -moz-linear-gradient(left, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+            background: -webkit-linear-gradient(left, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+            background: linear-gradient(to right, #1e5799 0%, #53d4d1 0%, #a5cf4f 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#a5cf4f', GradientType=1);
+            background-size: 100% 3px;
+            content: "";
+          }
+        }
+
+        &:nth-child(2):after {
+          bottom: -15px;
+        }
+
+        &:nth-child(3):after {
+          content: none;
+        }
+      }
+
+      &:last-child {
+        td {
+          padding-top: 25px;
+
+          @media (max-width: $tab-landscape) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      td {
+
+        &::before {
+          color: #005133;
+          font-size: 16px;
+        }
+
+        p {
+          margin-bottom: 0px;
+          font-weight: 300;
+
+          img {
+            padding-bottom: 20px;
+
+            @media (max-width: $tab-landscape) {
+              padding-bottom: 10px;
+            }
+          }
+        }
+
+        &:first-child {
+          p {
+            margin-bottom: 0px;
+            font-weight: 500;
+            font-weight: bold;
+
+            @media (max-width: $tab-landscape) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .table-list {
+          padding-left: 20px;
+
+          @media (max-width: $tab-landscape) {
+            padding-left: 30px;
+            margin-bottom: 0;
+          }
+
+          li {
+            font-size: 22px;
+            line-height: 32px;
+            padding-left: 5px;
+            padding-bottom: 15px;
+            position: relative;
+            list-style-type: none;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 12px;
+              left: -30px;
+              color: #000000;
+              border-radius: 50%;
+              height: 10px;
+              width: 10px;
+              background: #000000;
+
+              @media (max-width: $tab-landscape) {
+                top: 8px;
+              }
+            }
+
+            @media (max-width: $tab-landscape) {
+              font-size: 16px;
+              line-height: 24px;
+              padding-left: 0px;
+            }
+
+            @media (min-width: 768px) {
+              padding-right: 20px;
+            }
+
+          }
+        }
+
+        a {
+          display: inline-block;
+          max-width: 380px;
+
+          @media (max-width: $tab-landscape) {
+            line-height: 22px;
+            padding: 8px 10px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+table.lg-oddeven {
+  width: 100%;
+  margin: 30px 0;
+
+  thead {
+    tr {
+      th {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+        background: #005133;
+        color: #fff;
+        border: 0;
+        border-bottom: 1px solid #AFB0B0;
+        padding: 20px;
+        width: 50%;
+
+        &:nth-child(1) {
+          text-align: left;
+        }
+
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+
+    thead {
+      tr {
+        th {
+          font-size: 18px;
+          line-height: 24px;
+          border: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #fff;
+      }
+
+      &:nth-child(even) {
+        background-color: #f3f3f3;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #AFB0B0;
+      }
+
+      td {
+        font-size: 22px;
+        line-height: 32px;
+        padding: 15px 20px;
+        border: 0;
+        // border-bottom: 1px solid #AFB0B0;
+        border-right: 1px solid #AFB0B0;
+        border-left: 1px solid #AFB0B0;
+        width: 50%;
+
+        &:nth-child(2) {
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      tr {
+        td {
+          font-size: 18px;
+          line-height: 24px;
+          padding: 14px 15px;
+          word-break: break-word;
+          color: #000000;
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}

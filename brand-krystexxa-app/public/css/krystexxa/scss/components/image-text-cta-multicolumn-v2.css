@@ -1,0 +1,61 @@
+.img-txt-stacked .txt-cta-wrap {
+  padding: 10px 0px; }
+  .img-txt-stacked .txt-cta-wrap h3.img-cta-heading {
+    font-size: 26px;
+    letter-spacing: 0.45px;
+    color: #7c2468;
+    margin: 0; }
+    @media screen and (max-width: 1023px) {
+      .img-txt-stacked .txt-cta-wrap h3.img-cta-heading {
+        font-size: 34px; } }
+  .img-txt-stacked .txt-cta-wrap h3.multicolumn-text-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.06px;
+    color: #7c2468;
+    padding: 0px 26px; }
+    @media screen and (max-width: 1023px) {
+      .img-txt-stacked .txt-cta-wrap h3.multicolumn-text-heading {
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.05px;
+        padding: 0px 10px; } }
+  .img-txt-stacked .txt-cta-wrap p.img-cta-content {
+    font-size: 20px;
+    letter-spacing: 0.35px;
+    color: #555555; }
+    @media screen and (max-width: 1023px) {
+      .img-txt-stacked .txt-cta-wrap p.img-cta-content {
+        font-size: 22px;
+        line-height: normal; } }
+    .img-txt-stacked .txt-cta-wrap p.img-cta-content span {
+      display: block;
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.45px;
+      margin: 5px 0;
+      color: #7c2468; }
+      @media screen and (max-width: 1023px) {
+        .img-txt-stacked .txt-cta-wrap p.img-cta-content span {
+          font-size: 34px; } }
+  .img-txt-stacked .txt-cta-wrap p.multicolumn-text-content {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.35px;
+    color: #555555; }
+    @media screen and (max-width: 1023px) {
+      .img-txt-stacked .txt-cta-wrap p.multicolumn-text-content {
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 0.31px; } }
+    .img-txt-stacked .txt-cta-wrap p.multicolumn-text-content span {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.6;
+      letter-spacing: 0.35px;
+      color: #d51a7c; }
+  .img-txt-stacked .txt-cta-wrap p a {
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 20px;
+    color: #d61a7d; }

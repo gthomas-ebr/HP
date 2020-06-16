@@ -1,0 +1,138 @@
+.header {
+  background: #ccccca; }
+  .header .header-title {
+    font-family: "LatoWebRegular", sans-serif;
+    color: #000;
+    max-width: calc(100% - 50px); }
+    @media (max-width: 399px) {
+      .header .header-title {
+        font-size: 13px;
+        top: 10px;
+        left: 35px; } }
+
+#refresh-text {
+  margin-top: 6px;
+  margin-left: 10px;
+  font-style: normal;
+  color: #000;
+  vertical-align: top; }
+
+#refresh {
+  width: 100%;
+  text-align: left;
+  line-height: 20px; }
+  #refresh:hover #refresh-text {
+    color: #d61a7d !important; }
+
+.header-backdrop {
+  background: #ccccca; }
+
+.header-logo {
+  position: absolute !important;
+  top: 8px !important;
+  left: 11px !important;
+  width: 27px !important;
+  z-index: 1 !important; }
+
+#msg-list-wrapper {
+  padding-top: 10px; }
+
+i#popout {
+  display: none !important; }
+
+#rulai-widget-move-handle {
+  display: none !important; }
+
+.header-icon-wrapper:hover {
+  color: #d61a7d !important; }
+
+.bot-msg > .msg-content {
+  padding: 10px 15px;
+  background: #f4f4f4;
+  color: #333;
+  font-size: 14px; }
+
+.user-msg > .msg-content {
+  min-width: 100px;
+  text-align: center;
+  background: #d7197d;
+  border-radius: 12px 12px 0 12px; }
+
+.user-msg {
+  border-radius: 0;
+  margin-bottom: 15px; }
+
+.bot-msg {
+  margin-bottom: 15px; }
+
+.card-row .message {
+  background: #fff;
+  border-color: #d7197d;
+  border-radius: 30px;
+  padding: 10px 7px;
+  color: #d7197d;
+  font-weight: 700; }
+
+.bot-msg > .msg-content .card-row {
+  margin-top: 10px;
+  width: 100%; }
+
+.card-row .message:hover {
+  background: #d7197d; }
+
+.card-row .cell:last-child .message {
+  width: 100%;
+  display: block; }
+
+.card-row .cell:nth-child(3n) {
+  width: calc(100% - 20px);
+  margin-top: 10px; }
+
+.msg-content ul {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none; }
+
+.msg-content a {
+  background: #fff;
+  border: 1px solid #d7197d;
+  font-weight: 700;
+  border-radius: 50px;
+  color: #d7197d;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 15px;
+  max-width: 275px; }
+
+.msg-content ul a:hover {
+  color: #fff;
+  background: #d7197d; }
+
+.msg-content a:hover {
+  background: #d7197d;
+  color: #fff; }
+
+.reply-container {
+  display: none !important; }
+
+.footer-icon-wrapper {
+  color: gray; }
+
+.footer-icon-wrapper:hover {
+  color: #d61a7d !important; }
+
+/*Font family declarations*/
+#prechat .body {
+  font-family: "LatoWebRegular", sans-serif; }
+
+#msg-list-wrapper {
+  font-family: "LatoWebRegular", sans-serif; }
+
+.bot-msg-label {
+  font-family: "LatoWebRegular", sans-serif; }
+
+.agent-msg > .msg-label {
+  font-family: "LatoWebRegular", sans-serif; }

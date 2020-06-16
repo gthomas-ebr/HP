@@ -1,0 +1,77 @@
+#rulai-widget-launch-icon {
+    right: 0 !important;
+    top: calc(50% - 60px) !important;
+    height: 153px !important;
+    width: 45px !important;
+    background: #fff !important;
+    border: 1px solid rgb(50, 69, 76) !important;
+    border-right: transparent !important;
+    border-radius: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: none !important;
+
+    &:before {
+        content: "Chat Now";
+        color: #d6177e;
+        position: absolute;
+        width: 100px;
+        bottom: 35px;
+        left: 0;
+        height: 20px;
+        transform: rotateZ(-90deg);
+        left: 20px;
+        text-transform: uppercase;
+        transform-origin: left;
+    }
+
+    img#rulai-widget-launch-icon-image {
+        position: relative !important;
+        height: 35px !important;
+        width: 26px !important;
+        border-radius: 0 !important;
+        margin-bottom: 6px;
+        left: -9px !important;
+    }
+
+    @media (max-width: 767px) {
+        height: 80px !important;
+        width: 30px !important;
+        &:before {
+            content: "Chat";
+            width: auto;
+            bottom: 26px;
+            font-size: 14px;
+            left: 15px;
+        }
+
+        img#rulai-widget-launch-icon-image {
+            height: 24px !important;
+            width: 18px !important;
+        }
+    }
+}
+
+#rulai-widget-iframe-wrapper {
+    bottom: 125px !important;
+    height: auto !important;
+    width: 100% !important;
+    border: none !important;
+    right: 0 !important;
+    top: 0 !important;
+
+    &.hide {
+        display: none !important;
+    } 
+
+    @media (min-width: 768px) {
+        bottom: 165px !important;
+        max-height: 550px !important;
+        width: 400px !important;
+        right: 0px !important;
+        border: none !important;
+        top: 10px !important;
+        height: auto !important;
+    }
+}

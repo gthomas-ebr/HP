@@ -1,0 +1,908 @@
+{
+    "signupConsumer": {
+        "notifyMethod": [
+            
+            {
+                "radioField": {
+
+                    "attributes": [
+                        {
+                            "name": "id",
+                            "value": "UserType"
+                        },
+                        {
+                            "name": "name",
+                            "value": "UserType"
+                        },
+                        {
+                            "name": "autoComplete",
+                            "value": "off"
+                        },
+                        {
+                            "name": "class",
+                            "value": "form-check-input"
+                        },
+                        {
+                            "name": "type",
+                            "value": "radio"
+                        },
+                        {
+                            "name": "data-val-range",
+                            "value": ""
+                        },
+                        {
+                            "name": "data-val-range-min",
+                            "value": "True"
+                        },
+                        {
+                            "name": "data-val-range-max",
+                            "value": "True"
+                        },
+                        {
+                            "name":"value",
+                            "value":"Patient"
+                        },
+                        {
+                            "name": "ga-tag",
+                            "value": "radio"
+                        }
+                    ],
+                    "required": {
+                        "errorMessage": ""
+                    },
+                    "radioForID": "UserType",
+                    "labelFor": "UserType",
+                    "radioTxt": "<span>Patient</span>"
+                } 
+            },
+            {
+                "radioField": {
+
+                    "attributes": [
+                        {
+                            "name": "id",
+                            "value": "UserTypeTwo"
+                        },
+                        {
+                            "name": "name",
+                            "value": "UserType"
+                        },
+                        {
+                            "name": "autoComplete",
+                            "value": "off"
+                        },
+                        {
+                            "name": "class",
+                            "value": "form-check-input"
+                        },
+                        {
+                            "name": "type",
+                            "value": "radio"
+                        },
+                        {
+                            "name": "data-val-range",
+                            "value": ""
+                        },
+                        {
+                            "name": "data-val-range-min",
+                            "value": "True"
+                        },
+                        {
+                            "name": "data-val-range-max",
+                            "value": "True"
+                        },
+                        {
+                            "name": "ga-tag",
+                            "value": "radio"
+                        },
+                        {
+                            "name":"value",
+                            "value":"Caregiver"
+                        }
+                    ],
+                    "required": {
+                        "errorMessage": ""
+                    },
+                    "radioForID": "UserTypeTwo",
+                    "labelFor": "UserTypeTwo",
+                    "radioTxt": "<span>Caregiver</span>"
+                } 
+            }
+        ],
+
+     "formInput":{
+      "firstNameInput": {
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "FirstName",
+          "labelFor": "",
+          "labelTxt": "First Name"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [{
+              "name": "class",
+              "value": "form-control"
+            },
+            {
+              "name": "id",
+              "value": "fname"
+            },
+            {
+              "name": "name",
+              "value": "FirstName"
+            },
+            {
+              "name": "autoComplete",
+              "value": "off"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "1"
+            },
+            {
+              "name": "data-val-length",
+              "value": ""
+            },
+            {
+                "name": "ga-tag",
+                "value": "input"
+            },
+            {
+              "name": "data-val-length-max",
+              "value": "35"
+            }
+          ],
+          "required": {
+            "errorMessage": "This field is required."
+          }
+        },
+        "validationField": {
+          "labelFor": "FirstName"
+        }
+      }
+    },
+    "lastNameInput": {
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "LastName",
+          "labelFor": "",
+          "labelTxt": "Last Name"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [{
+              "name": "class",
+              "value": "form-control"
+            },
+            {
+              "name": "id",
+              "value": "lname"
+            },
+            {
+              "name": "name",
+              "value": "LastName"
+            },
+            {
+              "name": "autoComplete",
+              "value": "off"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+            {
+              "name": "type",
+              "value": "text"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "1"
+            },
+            {
+              "name": "data-val-length",
+              "value": ""
+            },
+            {
+            "name": "ga-tag",
+            "value": "input"
+            },
+            {
+              "name": "data-val-length-max",
+              "value": "35"
+            }
+          ],
+          "required": {
+            "errorMessage": "This field is required."
+          }
+        },
+        "validationField": {
+          "labelFor": "LastName"
+        }
+      }
+    },
+    "emailInput": {
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "Email",
+          "labelFor": "",
+          "labelTxt": "Email"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [{
+              "name": "id",
+              "value": "email"
+            },
+            {
+              "name": "name",
+              "value": "Email"
+            },
+            {
+              "name": "autoComplete",
+              "value": "off"
+            },
+            {
+              "name": "class",
+              "value": "form-control"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+            {
+              "name": "type",
+              "value": "email"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "2"
+            },
+            {
+              "name": "data-val-length",
+              "value": "Please enter a correctly formatted email."
+            },
+            {
+              "name": "data-val-email",
+              "value": "Please enter a correctly formatted email."
+            },
+            {
+              "name": "ga-tag",
+              "value": "input"
+            },
+            {
+              "name": "data-val-length-max",
+              "value": "35"
+            }
+          ],
+          "required": {
+            "errorMessage": "This field is required."
+          }
+        },
+        "validationField": {
+          "labelFor": "Email"
+        }
+      }
+    },
+    "confirmEmailInput": {
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "ConfirmEmail",
+          "labelFor": "",
+          "labelTxt": "Confirm Email"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [{
+              "name": "id",
+              "value": "cemail"
+            },
+            {
+              "name": "name",
+              "value": "ConfirmEmail"
+            },
+            {
+              "name": "autoComplete",
+              "value": "off"
+            },
+            {
+              "name": "class",
+              "value": "form-control"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+            {
+              "name": "type",
+              "value": "email"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "2"
+            },
+            {
+              "name": "data-val-length",
+              "value": "Please enter a correctly formatted email."
+            },
+            {
+              "name": "data-val-email",
+              "value": "Please enter a correctly formatted email."
+            },
+            {
+              "name": "data-val-length-max",
+              "value": "35"
+            },
+            {
+              "name": "data-val-equalto",
+              "value": "Email addresses do not match."
+            },
+            {
+              "name": "ga-tag",
+              "value": "input"
+            },
+            {
+              "name": "data-val-equalto-other",
+              "value": "*.Email"
+            }
+          ],
+          "required": {
+            "errorMessage": "This field is required."
+          }
+        },
+        "validationField": {
+          "labelFor": "ConfirmEmail"
+        }
+      }
+    },
+    "phoneInput":{
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "optional-phone",
+          "labelFor": "PhoneNo",
+          "labelTxt": "Phone"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [
+            {
+              "name": "class",
+              "value": "form-control optional-phone"
+            },
+            {
+              "name": "id",
+              "value": "Phone"
+            },
+            {
+              "name": "name",
+              "value": "Phone"
+            },
+            {
+              "name": "autoComplete",
+              "value": "off"
+            },
+            {
+              "name": "type",
+              "value": "tel"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "10"
+            },
+            {
+              "name": "data-val-length",
+              "value": "Please enter a valid phone number."
+            },
+            {
+              "name": "data-val-regex",
+              "value": "Please enter a valid phone number."
+            },
+            {
+              "name": "ga-tag",
+              "value": "input"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+          ],
+          "required": {
+             "errorMessage": "Please enter a valid phone number."
+          }
+        },
+        "validationField":{
+          "labelFor":"Phone"
+        }
+      }
+    },
+
+    "zipcodeInput": {
+      "inputWithLabel": {
+        "formLabel": {
+          "labelClass": "",
+          "labelFor": "Zip",
+          "labelTxt": "Zip Code"
+        },
+        "textInput": {
+          "inputParentClass": "",
+          "attributes": [{
+              "name": "type",
+              "value": "tel"
+            },
+            {
+              "name": "id",
+              "value": "zipcode"
+            },
+            {
+              "name": "name",
+              "value": "Zip"
+            },
+            {
+              "name": "class",
+              "value": "form-control"
+            },
+            {
+              "name": "data-val",
+              "value": "true"
+            },
+            {
+              "name": "data-val-length-min",
+              "value": "5"
+            },
+            {
+              "name": "data-val-length",
+              "value":"Your ZIP code should be 5 digits."
+            },
+            {
+              "name": "ga-tag",
+              "value": "input"
+            },
+            {
+              "name": "maxlength",
+              "value": "5"
+            }
+          ],
+          "required": {
+            "errorMessage": "This field is required. <br>Your ZIP code should be 5 digits."
+          }
+        },
+        "validationField": {
+          "labelFor": "Zip"
+        }
+      }
+    },
+    "additionalInput":{
+            "address1": {
+              "inputWithLabel": {
+                 "formLabel": {
+                    "labelClass": "address1",
+                    "labelFor": "",
+                    "labelTxt": "Street Address"
+                  },
+                  "textInput": {
+                    "inputParentClass": "",
+                    "attributes": [
+                      {
+                        "name": "type",
+                        "value": "text"
+                      },
+                      {
+                        "name": "id",
+                        "value": "address1"
+                      },
+                      {
+                        "name": "autoComplete",
+                        "value": "off"
+                      },
+                      {
+                        "name": "name",
+                        "value": "address1"
+                      },
+                      {
+                        "name": "class",
+                        "value": "form-control "
+                      },
+                      {
+                        "name": "data-val",
+                        "value": "true"
+                      },
+                      {
+                        "name": "data-val-length-min",
+                        "value": "1"
+                      },
+                      {
+                        "name": "data-val-length",
+                        "value": "Address is required."
+                      },
+                      {
+                        "name": "ga-tag",
+                        "value": "input"
+                      },
+                      {
+                        "name": "data-val-length-max",
+                        "value": "200"
+                      }
+                    ],
+                    "required": {
+                      "errorMessage": "Address is required."
+                    }
+                  },
+            "validationField": {
+              "labelFor": "address1"
+            }
+              }
+            },
+            "address2": {
+              "inputWithLabel": {
+                  "formLabel": {
+                    "labelClass": "address2",
+                    "labelFor": "",
+                    "labelTxt": "Street Address 2 (Optional)"
+                  },
+                  "textInput": {
+                    "inputParentClass": "",
+                    "attributes": [
+                      {
+                        "name": "type",
+                        "value": "text"
+                      },
+                      {
+                        "name": "id",
+                        "value": "address2"
+                      },
+                      {
+                        "name": "autoComplete",
+                        "value": "off"
+                      },
+                      {
+                        "name": "class",
+                        "value": "form-control "
+                      },
+                      {
+                        "name": "data-val",
+                        "value": "false"
+                      },
+                      {
+                        "name": "data-val-length-min",
+                        "value": "1"
+                      },
+                      {
+                        "name": "name",
+                        "value": "address2"
+                      },
+                      {
+                        "name": "data-val-length",
+                        "value": "Address is required."
+                      },
+                      {
+                        "name": "ga-tag",
+                        "value": "input"
+                      },
+                      {
+                        "name": "data-val-length-max",
+                        "value": "200"
+                      }
+                    ],
+                    "required": {
+                        "errorMessage": "Address is required."
+                    }
+                  },
+                "validationField": {
+                  "labelFor": "address2"
+                }
+              }
+            },
+            "city": {
+              "inputWithLabel": {
+                  "formLabel": {
+                    "labelClass": "city",
+                    "labelFor": "",
+                    "labelTxt": "City"
+                  },
+                  "textInput": {
+                    "inputParentClass": "",
+                    "attributes": [
+                      {
+                          "name": "type",
+                          "value": "text"
+                      },
+                      {
+                        "name": "class",
+                        "value": "form-control "
+                      },
+                      {
+                        "name": "id",
+                        "value": "city"
+                      },
+                      {
+                        "name": "data-val",
+                        "value": "true"
+                      },
+                      {
+                        "name": "name",
+                        "value": "city"
+                      },
+                      {
+                        "name": "data-val-length-min",
+                        "value": "1"
+                      },
+                      {
+                        "name": "data-val-length",
+                        "value": "Please enter a valid city."
+                      },
+                      {
+                        "name": "ga-tag",
+                        "value": "input"
+                      },
+                      {
+                        "name": "data-val-length-max",
+                        "value": "35"
+                      }
+                    ],
+                    "required": {
+                        "errorMessage": "Please enter a valid city."
+                    }
+                  },
+            "validationField": {
+              "labelFor": "city"
+            }
+              }
+            },
+        "stateInput": {
+          "dropMenu": {
+            "formLabel": {
+              "labelClass": "",
+              "labelFor": "State",
+              "labelTxt": "State "
+            },
+            "menuSelect": {
+              "selectName": "State",
+              "selectId": "State",
+              "selectValue": "",
+              "validate": "true",
+              "labelFor": "State",
+
+              "dropdownClass": "form-control",
+              "options": [
+                    {
+                      "optVal": "",
+                      "optTxt": "-Please Select-",
+                      "selected": "selected disabled"
+                    },
+                    {
+                        "optVal": "AL",
+                        "optTxt": "Alabama"
+                    },
+
+                    {
+                        "optVal": "AK",
+                        "optTxt": "Alaska"
+                    },
+                    {
+                        "optVal": "AZ",
+                        "optTxt": "Arizona"
+                    },
+                    {
+                        "optVal": "AR",
+                        "optTxt": "Arkansas"
+                    },
+                    {
+                        "optVal": "CA",
+                        "optTxt": "California"
+                    },
+                    {
+                        "optVal": "CO",
+                        "optTxt": "Colorado"
+                    },
+                    {
+                        "optVal": "CT",
+                        "optTxt": "Connecticut"
+                    },
+                    {
+                        "optVal": "DE",
+                        "optTxt": "Delaware"
+                    },
+                    {
+                        "optVal": "DC",
+                        "optTxt": "District Of Columbia"
+                    },
+                    {
+                        "optVal": "FL",
+                        "optTxt": "Florida"
+                    },
+                    {
+                        "optVal": "GA",
+                        "optTxt": "Georgia"
+                    },
+                    {
+                        "optVal": "HI",
+                        "optTxt": "Hawaii"
+                    },
+                    {
+                        "optVal": "ID",
+                        "optTxt": "Idaho"
+                    },
+                    {
+                        "optVal": "IL",
+                        "optTxt": "Illinois"
+                    },
+                    {
+                        "optVal": "IN",
+                        "optTxt": "Indiana"
+                    },
+                    {
+                        "optVal": "IA",
+                        "optTxt": "Iowa"
+                    },
+                    {
+                        "optVal": "KS",
+                        "optTxt": "Kansas"
+                    },
+                    {
+                        "optVal": "KY",
+                        "optTxt": "Kentucky"
+                    },
+                    {
+                        "optVal": "LA",
+                        "optTxt": "Louisiana"
+                    },
+                    {
+                        "optVal": "ME",
+                        "optTxt": "Maine"
+                    },
+                    {
+                        "optVal": "MD",
+                        "optTxt": "Maryland"
+                    },
+                    {
+                        "optVal": "MA",
+                        "optTxt": "Massachusetts"
+                    },
+                    {
+                        "optVal": "MI",
+                        "optTxt": "Michigan"
+                    },
+                    {
+                        "optVal": "MN",
+                        "optTxt": "Minnesota"
+                    },
+                    {
+                        "optVal": "MS",
+                        "optTxt": "Mississippi"
+                    },
+                    {
+                        "optVal": "MO",
+                        "optTxt": "Missouri"
+                    },
+                    {
+                        "optVal": "MT",
+                        "optTxt": "Montana"
+                    },
+                    {
+                        "optVal": "NE",
+                        "optTxt": "Nebraska"
+                    },
+                    {
+                        "optVal": "NV",
+                        "optTxt": "Nevada"
+                    },
+                    {
+                        "optVal": "NH",
+                        "optTxt": "New Hampshire"
+                    },
+                    {
+                        "optVal": "NJ",
+                        "optTxt": "New Jersey"
+                    },
+                    {
+                        "optVal": "NM",
+                        "optTxt": "New Mexico"
+                    },
+                    {
+                        "optVal": "NY",
+                        "optTxt": "New York"
+                    },
+                    {
+                        "optVal": "NC",
+                        "optTxt": "North Carolina"
+                    },
+                    {
+                        "optVal": "ND",
+                        "optTxt": "North Dakota"
+                    },
+                    {
+                        "optVal": "OH",
+                        "optTxt": "Ohio"
+                    },
+                    {
+                        "optVal": "OK",
+                        "optTxt": "Oklahoma"
+                    },
+                    {
+                        "optVal": "OR",
+                        "optTxt": "Oregon"
+                    },
+                    {
+                        "optVal": "PA",
+                        "optTxt": "Pennsylvania"
+                    },
+                    {
+                        "optVal": "RI",
+                        "optTxt": "Rhode Island"
+                    },
+                    {
+                        "optVal": "SC",
+                        "optTxt": "South Carolina"
+                    },
+                    {
+                        "optVal": "SD",
+                        "optTxt": "South Dakota"
+                    },
+                    {
+                        "optVal": "TN",
+                        "optTxt": "Tennessee"
+                    },
+                    {
+                        "optVal": "TX",
+                        "optTxt": "Texas"
+                    },
+                    {
+                        "optVal": "UT",
+                        "optTxt": "Utah"
+                    },
+                    {
+                        "optVal": "VT",
+                        "optTxt": "Vermont"
+                    },
+                    {
+                        "optVal": "VA",
+                        "optTxt": "Virginia"
+                    },
+                    {
+                        "optVal": "WA",
+                        "optTxt": "Washington"
+                    },
+                    {
+                        "optVal": "WV",
+                        "optTxt": "West Virginia"
+                    },
+                    {
+                        "optVal": "WI",
+                        "optTxt": "Wisconsin"
+                    },
+                    {
+                        "optVal": "WY",
+                        "optTxt": "Wyoming"
+                    }
+              ]
+            },
+                    "validationSearchField": {
+          "labelFor": "state"
+        },
+        "textInput": {
+          "required": {
+            "errorMessage": "This field is required."
+          }
+        }
+          }
+         },
+
+        }
+    },  
+    "consentText": {
+        "paragraph": {
+                "paraTxt": "<b>Privacy Notice and Consent</b>: I understand I am giving Horizon, its affiliates, and business partners permission to use the personal information provided in this registration form, as described in this authorization. I understand that the information I am providing may be used by Horizon Therapeutics to provide me with health and product information and related services concerning health conditions and treatments. By submitting this form, I consent to these uses and am confirming that I have read and agree to the Horizon Therapeutics <a href='#'>Terms & Conditions</a> and <a href='#'>Privacy Policy</a>. I understand that Horizon and its contracted third parties will NOT sell or rent personal information, and that the information provided in this form will be used in accordance with the Horizon Therapeutics <a href='#'>Privacy Policy</a>. I agree that this authorization will expire ten (10) years from the date submitted, or until my participation in the program ends through my cancellation. I acknowledge that I am submitting this form voluntarily, and that I am at least 18 years of age."
+      }
+    },
+    "buttonClass": "Submit"
+  }
+}
+

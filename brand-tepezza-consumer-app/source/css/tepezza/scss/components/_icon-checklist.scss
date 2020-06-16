@@ -1,0 +1,67 @@
+.checlist-heading{
+
+    p,ul{
+        display: none;
+    }
+
+    h4{
+        font-family: "TiresiasPCfont";
+        color: #000000;
+        padding-left: 25px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        &:before {
+            background-image: url('../../images/tepezza/icon-checklist.png');
+            height: 54px;
+            width: 50px;
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+        @media (max-width: $mobile) {
+                font-size: 16px;
+                line-height: 24px;
+                padding-left: 0px;
+            }
+    }
+
+    @media (max-width: $mobile) {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+
+        // @media (max-width: $mobile) {
+        //     margin-left: 0px;
+        // }
+        // li {
+        //     font-family: "TiresiasPCfont";
+        //     color: #000000;
+        //     padding-left: 35px;
+        //     font-weight: 300;
+        //     font-size: 22px;
+        //     line-height: 32px;
+        //     margin-bottom: 35px;
+
+        //     @media (max-width: $mobile) {
+        //         padding-left: 0px;
+        //         font-size: 16px;
+        //         line-height: 24px;
+        //         margin-bottom: 20px;
+        //     }
+
+        //     &:after {
+        //         background-image: url('../../images/tepezza/icon-checklist.png');
+        //         top: 5px;
+        //         height: 54px;
+        //         width: 50px;
+
+        //         @media (max-width: $mobile) {
+        //             display: none;
+        //         }
+        //     }
+        // }
+
+}

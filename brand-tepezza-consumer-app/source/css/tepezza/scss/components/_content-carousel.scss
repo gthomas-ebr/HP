@@ -1,0 +1,305 @@
+.content-carousel-wrap {
+  position: relative;
+  margin: 0 auto 25px;
+  width: 100%;
+  padding: 44px 117px 30px;
+  background-color: rgba(0, 0, 0, 0.04);
+
+
+  @media (max-width: $tab-landscape) {
+    padding: 30px 35px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 30px 20px 27px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  .carousel-parent {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  .content-carousel {
+    position: relative;
+
+    .slick-list {
+      max-width: 920px;
+      margin: 0 auto;
+
+      @media (max-width: $tab-landscape) {
+        width: 100%;
+      }
+    }
+
+
+    .slick-arrow {
+      position: absolute;
+      top: 195px;
+      transform: translateY(-50%);
+      z-index: 2;
+      font-size: 0;
+      font-weight: normal;
+      color: inherit;
+      background-color: transparent;
+      padding: 0;
+
+      img {
+        max-width: 52px;
+        width: 52px;
+        height: 52px;
+
+      }
+
+      @media (max-width: $tab-landscape) {
+        top: 147px;
+
+        img {
+          height: 25px;
+          width: 25px;
+          max-width: 25px;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        top: 20%;
+
+        img {
+          height: 53px;
+          width: 36px
+        }
+      }
+
+
+
+      &.slick-disabled {
+        display: block !important;
+      }
+
+      &.prev-arrow {
+        left: -85px;
+
+        @media (max-width: $tab-landscape) {
+          left: -30px;
+
+        }
+
+        @media (max-width: $mobile) {
+          left: -38px;
+        }
+      }
+
+      &.next-arrow {
+        right: -85px;
+
+        @media (max-width: $tab-landscape) {
+          right: -30px;
+
+        }
+
+        @media (max-width: $mobile) {
+          right: -38px;
+        }
+      }
+
+    }
+
+    .slick-dots {
+      margin: 27px 0;
+      position: relative;
+      bottom: 0;
+
+      @media (max-width: $tab-landscape) {
+        margin: 20px 0;
+      }
+
+      @media (max-width: $tab-landscape) {
+        margin: 10px 0;
+      }
+
+      li {
+        width: auto;
+        margin: 0;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        button {
+          width: 18px;
+          height: 18px;
+          padding: 0;
+          border-radius: 50%;
+          margin: 0 7px;
+          background-color: #A5CF4F;
+
+          @media (max-width: $mobile) {
+            border-width: 2.4px;
+          }
+
+          &:before {
+            content: "";
+          }
+        }
+
+        &.slick-active {
+          button {
+            background-color: #005133;
+          }
+        }
+      }
+    }
+
+    .second-image {
+      margin-top: 22px;
+
+      @media (max-width: $mobile) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+
+    @media (max-width: $mobile) {
+      padding: 0;
+          margin: 0 10px;
+    }
+  }
+
+  .bottom-para {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      color: #000000;
+      margin-bottom: 0;
+
+    }
+
+  }
+
+
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #005133;
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+
+
+  .left-content {
+    margin-right: 20px;
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+    }
+  }
+
+  .right-content {
+    @media (max-width: $mobile) {
+      margin-top: 25px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .img-text-section {
+    text-align: left;
+    margin-top: 22px;
+
+    @media (max-width: $mobile) {
+      margin-top: 10px;
+    }
+
+    p {
+      letter-spacing: 0;
+      color: #000000;
+      font-size: 24px;
+      line-height: 34px;
+
+      @media (max-width: $mobile) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+.slick-slide{
+  img{
+    margin:0;
+    width:100%;
+
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+//Caurosal Hover Images
+// .prev-arrow {
+//   .withHover {
+//     display: none;
+//   }
+
+//   .withoutHover {
+//     display: block;
+//   }
+
+//   &:hover {
+//     .withHover {
+//       display: block;
+//     }
+
+//     .withoutHover {
+//       display: none;
+//     }
+//   }
+// }
+
+// .next-arrow {
+//   .withHover {
+//     display: none;
+//   }
+
+//   .withoutHover {
+//     display: block;
+//   }
+
+//   &:hover {
+//     .withHover {
+//       display: block;
+//     }
+
+//     .withoutHover {
+//       display: none;
+//     }
+//   }
+// }

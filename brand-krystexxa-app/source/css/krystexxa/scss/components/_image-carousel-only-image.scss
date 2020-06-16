@@ -1,0 +1,47 @@
+.image-carousal-wrap {
+	.slick-list {
+		max-width: 800px;
+		margin: 0 auto;
+		@media  (max-width: $mobile) {
+			width: calc(100% - 60px);
+    }
+	}
+  .image-carousal {
+    .carousal-content {
+      img {
+        @media  (max-width: $mobile) {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+}
+
+.bg-lightGrey {
+	.image-carousal-wrap .image-carousal{
+		.carousal-content img{
+			max-width: none;
+			@media  (max-width: 1023px){
+				max-width: 100%;
+			}
+		}
+	  .slick-dots {
+	    li {
+	      button {
+	        &:before {
+	          border-color: #d51a7c;
+	        }
+	      }
+	    }
+	    li.slick-active {
+	      button {
+	        &:before {
+	          background-color: #d51a7c;
+	        }
+	      }
+	    }
+	  }
+	}
+}

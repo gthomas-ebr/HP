@@ -1,0 +1,127 @@
+.section-heading {
+  margin-bottom: 0 !important;
+
+  h2 {
+    font-size: 22px;
+    color: #354154;
+    font-weight: 700;
+  }
+}
+
+.accordion-list {
+  margin-bottom: 30px;
+  .card {
+    padding: 20px 0px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #979797;
+    display: block;
+    >.card-title {
+      background: transparent;
+      padding: 0 !important;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        background: rgba(216, 216, 216, 0.3);
+        display: block;
+        border-radius: 50%;
+        top: -5px;
+        transform: none;
+
+        @media  (max-width: $mobile) {
+          height: 33px;
+          width: 33px;
+          top: 0;
+        }
+      }
+
+      >a {
+        display: block;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #d7187e;
+        line-height: 24px;
+        position: relative;
+        z-index: 99;
+        padding: 5px 50px 5px 0;
+        white-space: normal;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:after,
+        &:before {
+          position: absolute;
+          content: "";
+          top: 15px;
+          font-size: 30px;
+          height: 2px;
+          text-align: center;
+          width: 15px;
+          background: #354154;
+          margin: 0 auto;
+          right: 13px;
+
+          @media  (max-width: $mobile) {
+            top: 16px;
+            right: 10px;
+            width: 12px;
+          }
+        }
+
+        &.collapsed {
+          &:before {
+            transform: rotate(90deg)
+          }
+        }
+      }
+    }
+    > p > a{
+      text-decoration: none !important;
+    }
+
+    @media  (max-width: $mobile) {
+      .col {
+        padding: 0 15px;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+
+      p,
+      a {
+        font-size: 20px;
+        margin: 0;
+        line-height: 24px;
+      }
+
+      p {
+        max-width: 700px;
+        padding-right: 50px;
+        max-width: 95%;
+
+        @media  (max-width: $mobile) {
+          padding-right: 0;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        color: #d7187e;
+
+        @media  (max-width: $mobile) {
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+}

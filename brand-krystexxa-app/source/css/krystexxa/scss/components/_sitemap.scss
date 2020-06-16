@@ -1,0 +1,46 @@
+ul.sitemap-list {
+  li {
+		a:only-child{
+			font-family: LatoWebRegular, sans-serif;
+		}
+    padding: 15px 0px;
+    border-bottom: 1px solid #c7c7c7;
+    .hz-list {
+      padding: 0 20px;
+      @media  (max-width: $mobile) {
+        padding: 0 25px;
+      }
+      li {
+        padding: 10px 0 5px;
+        border: none;
+      }
+    }
+    a {
+      font-size: 18px;
+      line-height: 1.78;
+      letter-spacing: 0.31px;
+      color: #d61a7d;
+      text-decoration: underline;
+      font-family: LatoWebBold, sans-serif;
+      span {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1.71;
+        letter-spacing: 0.37px;
+        color: #888888;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      &[href='#']{
+      	color: #888888;
+      	font-size: 21px;
+      	letter-spacing: 0.31px;
+      	line-height: 36px;
+      	text-decoration: none;
+      	pointer-events: none;
+      	font-family: "LatoWebBold", sans-serif;
+      }
+    }
+  }
+}

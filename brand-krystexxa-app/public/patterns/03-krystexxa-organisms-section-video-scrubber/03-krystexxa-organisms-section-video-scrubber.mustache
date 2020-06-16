@@ -1,0 +1,29 @@
+{{#videoScrubber}}
+
+  <div class="video-scrubber">
+
+    <button id="scrubber-btn"></button>
+    <div class="btn-wrap">
+      <ul class="range-label">
+        <li>{{range-one}}</li>
+        <li>{{range-two}}</li>
+        <li>{{range-three}}</li>
+      </ul>
+      <input id="ex5a" type="text" /><br />
+    </div>
+
+
+    {{#videoWrapper}}
+
+      <!-- preload="auto" muted="muted" autoplay="autoplay" -->
+      <div class="video-wrapper">
+        <video id="scrubber-video" playsinline autoplay="" preload="none" muted="muted" data-setframe="1">
+          <source src="{{videoSrc}}" type="video/mp4">
+          </source>
+        </video>
+
+      </div>
+    {{/videoWrapper}}
+
+  </div>
+{{/videoScrubber}}
